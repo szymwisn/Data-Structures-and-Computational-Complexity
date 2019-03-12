@@ -13,10 +13,10 @@ int main(int argc, char* argv[])
     do{
         cout << endl;
         cout << "==== MENU GLOWNE ===" << endl;
-        cout << "1.Tablica" << endl;
-        cout << "2.Lista" << endl;
-        cout << "3.Kopiec" << endl;
-        cout << "0.Wyjscie" << endl;
+        cout << "1. Tablica" << endl;
+        cout << "2. Lista" << endl;
+        cout << "3. Kopiec" << endl;
+        cout << "0. Wyjscie" << endl;
         cout << "Podaj opcje:";
         option = getche();
         cout << endl;

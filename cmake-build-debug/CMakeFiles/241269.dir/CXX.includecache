@@ -6,6 +6,40 @@
 
 #IncludeRegexTransform: 
 
+F:/Dev/Git/Data Structures and Computational Complexity Project/List.cpp
+List.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/List.h
+cstdlib
+-
+ctime
+-
+fstream
+-
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/List.h
+conio.h
+-
+string
+-
+iostream
+-
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/Menu.cpp
+Menu.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Menu.h
+Table.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Table.h
+List.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/List.h
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/Menu.h
+conio.h
+-
+string
+-
+iostream
+-
+
 F:/Dev/Git/Data Structures and Computational Complexity Project/Table.cpp
 Table.h
 F:/Dev/Git/Data Structures and Computational Complexity Project/Table.h

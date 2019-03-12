@@ -24,6 +24,9 @@ public:
     int loadFromFile(string FileName);
     bool IsValueInList(int value);
     void addValue(int index, int value);
+    void addValueStart(int value);
+    void addValueEnd(int value);
+    void addValueRandom(int value);
     void deleteFromList(int value);
     void display();
     void generateList(int size);
