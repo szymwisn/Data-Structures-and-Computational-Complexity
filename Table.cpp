@@ -114,7 +114,7 @@ void Table::deleteFromTable(int index) {
 void Table::display() {
     if(size > 0) {
         for(int i = 0; i < size; i++) {
-            cout << i << ": " << tab[i] << endl;
+            cout << "[" << i << "] " << tab[i] <<  "   ";
         }
     } else {
         cout << "W tablicy nie ma zadnych elementow." << endl;

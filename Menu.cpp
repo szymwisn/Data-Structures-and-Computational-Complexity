@@ -1,5 +1,6 @@
 #include "Menu.h"
 #include "Table.h"
+#include "List.h"
 
 void Menu::displayMenu(string info)
 {
@@ -73,7 +74,7 @@ void Menu::menu_table()
                 myTab.display();
                 break;
 
-            case '7': //tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
+            case '7': //TODO tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
                 // można sobie tu dodać własne case'y
                 break;
         }
@@ -83,7 +84,67 @@ void Menu::menu_table()
 
 void Menu::menu_list()
 {
-    //analogicznie jak menu_table()
+    List myList;
+
+    char opt;
+    string fileName;
+    int index, value;
+
+    do{
+        displayMenu("--- LISTA DWUKIERUNKOWA ---");
+        opt = getche();
+        cout << endl;
+        switch (opt){
+            case '1': //tutaj wczytytwanie  listy z pliku
+                cout << " Podaj nazwe zbioru:";
+                cin >> fileName;
+                myList.loadFromFile(fileName);
+                myList.display();
+                break;
+
+            case '2': //tutaj usuwanie elemenu z listy
+                cout << " podaj index:";
+                cin >> value;
+                myList.deleteFromList(value);
+                myList.display();
+                break;
+
+            case '3': //tutaj dodawanie elemetu do listy
+                cout << " podaj index:";
+                cin >> index;
+                cout << " podaj wartosc:";
+                cin >> value;
+
+                myList.addValue(index,value);
+                myList.display();
+                break;
+
+            case '4': //tutaj znajdowanie elemetu w liscie
+                cout << " podaj wartosc:";
+                cin >> value;
+                if (myList.IsValueInList(value))
+                    cout << "podana wartosc jest w liscie";
+                else
+                    cout << "podanej wartosci NIE ma w liscie";
+                break;
+
+            case '5':  //tutaj generowanie listy
+                cout << "Podaj ilosc elementow listy:";
+                cin >> value;
+                myList.generateList(value);
+                myList.display();
+                break;
+
+            case '6':  //tutaj wyświetlanie listy
+                myList.display();
+                break;
+
+            case '7': //TODO tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
+                // można sobie tu dodać własne case'y
+                break;
+        }
+
+    } while (opt != '0');
 }
 
 void Menu::menu_heap()

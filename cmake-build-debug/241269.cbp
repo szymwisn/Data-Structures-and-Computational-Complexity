@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="F:/Dev/Git/Data Structures and Computational Complexity Project/List.cpp">
+			<Option target="241269"/>
+		</Unit>
+		<Unit filename="F:/Dev/Git/Data Structures and Computational Complexity Project/List.h">
+			<Option target="241269"/>
+		</Unit>
 		<Unit filename="F:/Dev/Git/Data Structures and Computational Complexity Project/Menu.cpp">
 			<Option target="241269"/>
 		</Unit>

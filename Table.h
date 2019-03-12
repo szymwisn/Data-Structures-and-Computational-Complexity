@@ -7,8 +7,7 @@
 
 using namespace std;
 
-class Table
-{
+class Table {
     int *tab;  // wskaźnik tablicy
     int size; // ilość elementów w tablicy
     int *temp; // wskaźnik tymczasowej tablicy
