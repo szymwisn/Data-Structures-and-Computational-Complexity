@@ -1,18 +1,45 @@
 #include "Table.h"
 #include <cstdlib>
 #include <ctime>
+#include <fstream>
 
 Table::Table() {
     tab = new int[0];
     size = 0;
 }
 
+
 int Table::loadFromFile(string FileName) {
+    ifstream file;
+    string line;
+
+    file.open(FileName);
+
+    if(file.is_open()) {
+        // pobiera pierwszy wers - rozmiar tablicy
+        getline(file, line);
+        // stoi konwertuje string do int
+        size = stoi(line);
+
+        // tworzy tablice o okreslonym rozmiarze
+        tab = new int[size];
+
+        // wczytywanie kolejnych wersow z pliku
+        int i = 0;
+        while(getline(file, line)) {
+            tab[i] = stoi(line);
+            i++;
+        }
+        file.close();
+    } else {
+        cout << "Nie udalo sie otworzyc pliku." << endl;
+    }
+
     return 0;
 }
 
-bool Table::IsValueInTable(int val) {
 
+bool Table::IsValueInTable(int val) {
     // iteruje po tablicy i sprawdza czy element tablicy jest rowny podanej wartosci
     for(int i = 0 ; i < size; i++) {
         if(tab[i] == val) {
@@ -22,6 +49,7 @@ bool Table::IsValueInTable(int val) {
 
     return false;
 }
+
 
 void Table::addValue(int index, int value) {
     // zwiekszenie rozmiaru tablicy
@@ -58,6 +86,7 @@ void Table::addValue(int index, int value) {
     tab = temp;
 }
 
+
 void Table::deleteFromTable(int index) {
     // zmniejszenie rozmiaru tablicy
     size--;
@@ -81,8 +110,8 @@ void Table::deleteFromTable(int index) {
     tab = temp;
 }
 
+
 void Table::display() {
-    cout << "index: wartosc" << endl;
     if(size > 0) {
         for(int i = 0; i < size; i++) {
             cout << i << ": " << tab[i] << endl;
@@ -91,6 +120,7 @@ void Table::display() {
         cout << "W tablicy nie ma zadnych elementow." << endl;
     }
 }
+
 
 void Table::generateTable(int size) {
     // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb

@@ -13,6 +13,8 @@ cstdlib
 -
 ctime
 -
+fstream
+-
 
 F:/Dev/Git/Data Structures and Computational Complexity Project/Table.h
 conio.h
