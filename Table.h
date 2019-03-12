@@ -9,10 +9,12 @@ using namespace std;
 
 class Table
 {
-    int *tab;
-    int cnt; //ilość elementów w tablicy
+    int *tab;  // wskaźnik tablicy
+    int size; // ilość elementów w tablicy
+    int *temp; // wskaźnik tymczasowej tablicy
 
 public:
+    Table();
     int loadFromFile(string FileName);
     bool IsValueInTable(int val);
     void addValue(int index, int value);

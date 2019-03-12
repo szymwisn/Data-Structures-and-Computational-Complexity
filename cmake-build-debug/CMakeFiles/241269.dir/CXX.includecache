@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/Table.cpp
+Table.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Table.h
+cstdlib
+-
+ctime
+-
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/Table.h
+conio.h
+-
+string
+-
+iostream
+-
+

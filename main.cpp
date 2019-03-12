@@ -33,10 +33,12 @@ int main(int argc, char* argv[])
             case '3':
                 menu.menu_heap();
                 break;
+
+            default:
+                break;
         }
 
     } while (option != '0');
-
 
     return 0;
 }

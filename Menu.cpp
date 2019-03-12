@@ -1,8 +1,6 @@
 #include "Menu.h"
 #include "Table.h"
 
-Table myTab; //myTab może być dynamiczna, może byc zadeklarowana w manu_table
-
 void Menu::displayMenu(string info)
 {
     cout << endl;
@@ -20,6 +18,8 @@ void Menu::displayMenu(string info)
 
 void Menu::menu_table()
 {
+    Table myTab;
+
     char opt;
     string fileName;
     int index, value;
@@ -30,7 +30,7 @@ void Menu::menu_table()
         cout << endl;
         switch (opt){
             case '1': //tutaj wczytytwanie  tablicy z pliku
-                cout << " Podaj nazwę zbioru:";
+                cout << " Podaj nazwe zbioru:";
                 cin >> fileName;
                 myTab.loadFromFile(fileName);
                 myTab.display();
@@ -46,7 +46,7 @@ void Menu::menu_table()
             case '3': //tutaj dodawanie elemetu do tablicy
                 cout << " podaj index:";
                 cin >> index;
-                cout << " podaj waertość:";
+                cout << " podaj wartosc:";
                 cin >> value;
 
                 myTab.addValue(index,value);
@@ -54,16 +54,16 @@ void Menu::menu_table()
                 break;
 
             case '4': //tutaj znajdowanie elemetu w tablicy
-                cout << " podaj waertość:";
+                cout << " podaj wartosc:";
                 cin >> value;
                 if (myTab.IsValueInTable(value))
-                    cout << "poadana wartośc jest w tablicy";
+                    cout << "podana wartosc jest w tablicy";
                 else
-                    cout << "poadanej wartości NIE ma w tablicy";
+                    cout << "podanej wartosci NIE ma w tablicy";
                 break;
 
             case '5':  //tutaj generowanie  tablicy
-                cout << "Podaj ilość elementów tablicy:";
+                cout << "Podaj ilosc elementow tablicy:";
                 cin >> value;
                 myTab.generateTable(value);
                 myTab.display();
