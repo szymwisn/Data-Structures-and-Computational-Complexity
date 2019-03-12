@@ -103,7 +103,6 @@ void Menu::menu_table()
 
             case '0': //TODO tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
                 // można sobie tu dodać własne case'y
-                cout << "adsadasa" << endl;
                 break;
         }
 
@@ -193,7 +192,6 @@ void Menu::menu_list()
 
             case '0': //TODO tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
                 // można sobie tu dodać własne case'y
-                cout << "adsadasa" << endl;
                 break;
         }
 

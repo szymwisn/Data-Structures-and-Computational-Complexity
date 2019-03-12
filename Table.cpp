@@ -223,7 +223,7 @@ void Table::generateTable(int size) {
 
     // wypelnienie tablicy tymczasowej losowymi elementami
     for(int i = 0; i < size; i++) {
-        temp[i] = (rand() % 10) + 1; // zakres <1, 10>
+        temp[i] = (rand() % 1000) + 1; // zakres <1, 10>
     }
 
     // przypisanie wskaznika tablicy wlasciwej na wskaznik tablicy tymczasowej
