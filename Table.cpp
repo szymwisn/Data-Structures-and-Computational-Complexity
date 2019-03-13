@@ -118,15 +118,33 @@ void Table::deleteFromTable(int index) {
     // utworzenie nowej, tymczasowej tablicy
     temp = new int[size];
 
-    // wypelnienie tymczasowej tablicy elementami przed danym indexem
-    for(int i = 0; i < index; i++) {
-        temp[i] = tab[i];
+    // usuwanie pierwszego elementu - wypelnienie tymczasowej tablicy elementami z indexem 1 do konca
+    if(index == 0) {
+        // size + 1, bo wczesniej pomniejszono o 1, a tu jeszcze potrzebujemy tego elementu
+        for(int i = 1; i < size + 1 ; i++) {
+            temp[i - 1] = tab[i];
+        }
     }
 
-    // wypelnienie tymczasowej tablicy elementami po danym indexie
-    // size + 1, bo wczesniej pomniejszono o 1, a tu jeszcze potrzebujemy tego elementu
-    for(int i = index; i < size + 1 ; i++) {
-        temp[i] = tab[i + 1];
+    // usuwanie ostatniego elementu - wypelnienie tymczasowej tablicy elementami z indexem 0 do size - 2
+    if(index == size) {
+        for(int i = 0; i < index; i++) {
+            temp[i] = tab[i];
+        }
+    }
+
+    // pozostale przypadki
+    if(index > 0 && index < size) {
+        // wypelnienie tymczasowej tablicy elementami przed danym indexem
+        for(int i = 0; i < index; i++) {
+            temp[i] = tab[i];
+        }
+
+        // wypelnienie tymczasowej tablicy elementami po danym indexie
+        // size + 1, bo wczesniej pomniejszono o 1, a tu jeszcze potrzebujemy tego elementu
+        for(int i = index; i < size ; i++) {
+            temp[i] = tab[i + 1];
+        }
     }
 
     // wskaznik tablicy wskazuje teraz na nowa tablice
@@ -140,13 +158,11 @@ void Table::deleteFromTable(int index) {
 
 void Table::deleteFromTableStart() {
     deleteFromTable(0);
-    cout << endl << size << endl;
 }
 
 
 void Table::deleteFromTableEnd() {
-    deleteFromTable(size);
-    cout << endl << size << endl;
+    deleteFromTable(size - 1);
 }
 
 
@@ -154,9 +170,8 @@ void Table::deleteFromTableRandom() {
     // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb
     srand(time(NULL));
 
-    int index = rand() % (size + 1);
+    int index = rand() % size;
     deleteFromTable(index);
-    cout << endl << size << endl;
 }
 
 
