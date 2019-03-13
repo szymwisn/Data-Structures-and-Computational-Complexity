@@ -83,7 +83,6 @@ void List::addValueStart(int value) {
         // head ustawiam na ostatni element listy
         head = node;
     }
-
 }
 
 
@@ -106,7 +105,6 @@ void List::addValueEnd(int value) {
         // tail ustawiam na ostatni element listy
         tail = node;
     }
-
 }
 
 
@@ -116,6 +114,18 @@ void List::addValueRandom(int value) {
 
 
 void List::deleteFromList(int value) {
+
+}
+
+void List::deleteFromListStart() {
+
+}
+
+void List::deleteFromListEnd() {
+
+}
+
+void List::deleteFromListRandom() {
 
 }
 
@@ -153,7 +163,6 @@ void List::display() {
 
     //TODO to tylko do testow, potem usunac
     cout << endl << "h: " <<  head->value << endl << "t: " << tail->value;
-
 }
 
 

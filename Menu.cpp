@@ -147,14 +147,29 @@ void Menu::menu_list()
                 myList.display();
                 break;
 
-            case '2': //tutaj usuwanie elemenu z listy
+            case '2': //tutaj usuwanie elemenu z wybranego miejsca listy
                 cout << " podaj index:";
                 cin >> index;
                 myList.deleteFromList(index);
                 myList.display();
                 break;
 
-            case '3': //tutaj dodawanie elemetu w wybrane miejsce do listy
+            case '3': //tutaj usuwanie elemenu z poczatku listy
+                myList.deleteFromListStart();
+                myList.display();
+                break;
+
+            case '4': //tutaj usuwanie elemenu z konca listy
+                myList.deleteFromListEnd();
+                myList.display();
+                break;
+
+            case '5': //tutaj usuwanie elemenu z losowego miejsca listy
+                myList.deleteFromListRandom();
+                myList.display();
+                break;
+
+            case '6': //tutaj dodawanie elemetu w wybrane miejsce do listy
                 cout << " podaj index:";
                 cin >> index;
                 cout << " podaj wartosc:";
@@ -164,7 +179,7 @@ void Menu::menu_list()
                 myList.display();
                 break;
 
-            case '4': //tutaj dodawanie pierwszego elemetu do listy
+            case '7': //tutaj dodawanie pierwszego elemetu do listy
                 cout << " podaj wartosc:";
                 cin >> value;
 
@@ -172,7 +187,7 @@ void Menu::menu_list()
                 myList.display();
                 break;
 
-            case '5': //tutaj dodawanie ostatniego elemetu do listy
+            case '8': //tutaj dodawanie ostatniego elemetu do listy
                 cout << " podaj wartosc:";
                 cin >> value;
 
@@ -180,7 +195,7 @@ void Menu::menu_list()
                 myList.display();
                 break;
 
-            case '6': //tutaj dodawanie losowego elemetu do listy
+            case '9': //tutaj dodawanie losowego elemetu do listy
                 cout << " podaj wartosc:";
                 cin >> value;
 
@@ -188,7 +203,7 @@ void Menu::menu_list()
                 myList.display();
                 break;
 
-            case '7': //tutaj znajdowanie elemetu w liscie
+            case 'q': //tutaj znajdowanie elemetu w liscie
                 cout << " podaj wartosc:";
                 cin >> value;
                 if (myList.IsValueInList(value))
@@ -197,23 +212,23 @@ void Menu::menu_list()
                     cout << "podanej wartosci NIE ma w liscie";
                 break;
 
-            case '8':  //tutaj generowanie listy
+            case 'w':  //tutaj generowanie listy
                 cout << "Podaj ilosc elementow listy:";
                 cin >> value;
                 myList.generateList(value);
                 myList.display();
                 break;
 
-            case '9':  //tutaj wyświetlanie listy
+            case 'e':  //tutaj wyświetlanie listy
                 myList.display();
                 break;
 
-            case '0': //TODO tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
+            case 'r': //TODO tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
                 // można sobie tu dodać własne case'y
                 break;
         }
 
-    } while (opt != 'e');
+    } while (opt != '0');
 }
 
 void Menu::menu_heap()

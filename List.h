@@ -29,6 +29,9 @@ public:
     void addValueEnd(int value);
     void addValueRandom(int value);
     void deleteFromList(int value);
+    void deleteFromListStart();
+    void deleteFromListEnd();
+    void deleteFromListRandom();
     void display();
     void generateList(int size);
 };
