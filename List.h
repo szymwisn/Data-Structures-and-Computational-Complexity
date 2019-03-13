@@ -12,6 +12,7 @@ public:
     int value;
     Node *next;
     Node *previous;
+    Node(int value);
 };
 
 class List {
