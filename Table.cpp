@@ -105,10 +105,9 @@ void Table::addValueRandom(int value) {
         // wylosowanie indexu
         int index = rand() % (size + 1);
         addValue(index, value);
-    } else if (size == 0) {
+    } else {
         addValue(0, value);
     }
-
 }
 
 
@@ -140,16 +139,14 @@ void Table::deleteFromTable(int index) {
 }
 
 void Table::deleteFromTableStart() {
-    try {
-        deleteFromTable(0);
-    } catch(string w) {
-        cout << w << endl;
-    }
+    deleteFromTable(0);
+    cout << endl << size << endl;
 }
 
 
 void Table::deleteFromTableEnd() {
     deleteFromTable(size);
+    cout << endl << size << endl;
 }
 
 
@@ -157,9 +154,9 @@ void Table::deleteFromTableRandom() {
     // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb
     srand(time(NULL));
 
-    int index = rand() % size;
-
+    int index = rand() % (size + 1);
     deleteFromTable(index);
+    cout << endl << size << endl;
 }
 
 
