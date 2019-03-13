@@ -7,16 +7,19 @@ void Menu::displayMenu(string info)
     cout << endl;
     cout << info << endl;
     cout << "1. Wczytaj z pliku" << endl;
-    cout << "2. Usun" << endl;
-    cout << "3. Dodaj w wybranym miejscu" << endl;
-    cout << "4. Dodaj na poczatku" << endl;
-    cout << "5. Dodaj na koncu" << endl;
-    cout << "6. Dodaj w losowym miejscu" << endl;
-    cout << "7. Znajdz" << endl;
-    cout << "8. Utworz losowo" << endl;
-    cout << "9. Wyswietl" << endl;
-    cout << "0. Test (pomiary)" << endl;
-    cout << "e. Powrot do menu" << endl;
+    cout << "2. Usun w wybranym miejscu" << endl;
+    cout << "3. Usun na poczatku" << endl;
+    cout << "4. Usun na koncu" << endl;
+    cout << "5. Usun w losowym miejscu" << endl;
+    cout << "6. Dodaj w wybranym miejscu" << endl;
+    cout << "7. Dodaj na poczatku" << endl;
+    cout << "8. Dodaj na koncu" << endl;
+    cout << "9. Dodaj w losowym miejscu" << endl;
+    cout << "q. Znajdz" << endl;
+    cout << "w. Utworz losowo" << endl;
+    cout << "e. Wyswietl" << endl;
+    cout << "r. Test (pomiary)" << endl;
+    cout << "0. Powrot do menu" << endl;
     cout << "Podaj opcje:";
 }
 
@@ -40,14 +43,29 @@ void Menu::menu_table()
                 myTab.display();
                 break;
 
-            case '2': //tutaj usuwanie elemenu z tablicy
+            case '2': //tutaj usuwanie elemenu z tablicy w wybranym miejscu
                 cout << " podaj index:";
                 cin >> index;
                 myTab.deleteFromTable(index);
                 myTab.display();
                 break;
 
-            case '3': //tutaj dodawanie elemetu w wybrane miejsce do tablicy
+            case '3': //tutaj usuwanie elemenu z tablicy na poczatku
+                myTab.deleteFromTableStart();
+                myTab.display();
+                break;
+
+            case '4': //tutaj usuwanie elemenu z tablicy na koncu
+                myTab.deleteFromTableEnd();
+                myTab.display();
+                break;
+
+            case '5': //tutaj usuwanie elemenu z tablicy w losowym miejscu
+                myTab.deleteFromTableRandom();
+                myTab.display();
+                break;
+
+            case '6': //tutaj dodawanie elemetu w wybrane miejsce do tablicy
                 cout << " podaj index:";
                 cin >> index;
                 cout << " podaj wartosc:";
@@ -57,7 +75,7 @@ void Menu::menu_table()
                 myTab.display();
                 break;
 
-            case '4': //tutaj dodawanie pierwszego elemetu do tablicy
+            case '7': //tutaj dodawanie pierwszego elemetu do tablicy
                 cout << " podaj wartosc:";
                 cin >> value;
 
@@ -65,7 +83,7 @@ void Menu::menu_table()
                 myTab.display();
                 break;
 
-            case '5': //tutaj dodawanie ostatniego elemetu do tablicy
+            case '8': //tutaj dodawanie ostatniego elemetu do tablicy
                 cout << " podaj wartosc:";
                 cin >> value;
 
@@ -73,7 +91,7 @@ void Menu::menu_table()
                 myTab.display();
                 break;
 
-            case '6': //tutaj dodawanie losowego elemetu do tablicy
+            case '9': //tutaj dodawanie losowego elemetu do tablicy
                 cout << " podaj wartosc:";
                 cin >> value;
 
@@ -81,7 +99,7 @@ void Menu::menu_table()
                 myTab.display();
                 break;
 
-            case '7': //tutaj znajdowanie elemetu w tablicy
+            case 'q': //tutaj znajdowanie elemetu w tablicy
                 cout << " podaj wartosc:";
                 cin >> value;
                 if (myTab.IsValueInTable(value))
@@ -90,23 +108,23 @@ void Menu::menu_table()
                     cout << "podanej wartosci NIE ma w tablicy";
                 break;
 
-            case '8':  //tutaj generowanie  tablicy
+            case 'w':  //tutaj generowanie  tablicy
                 cout << "Podaj ilosc elementow tablicy:";
                 cin >> value;
                 myTab.generateTable(value);
                 myTab.display();
                 break;
 
-            case '9':  //tutaj wyświetlanie tablicy
+            case 'e':  //tutaj wyświetlanie tablicy
                 myTab.display();
                 break;
 
-            case '0': //TODO tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
+            case 'r': //TODO tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
                 // można sobie tu dodać własne case'y
                 break;
         }
 
-    } while (opt != 'e');
+    } while (opt != '0');
 }
 
 void Menu::menu_list()

@@ -12,7 +12,6 @@ Node::Node(int value) {
 List::List() {
     head = NULL;
     tail = NULL;
-    size = 0;
 }
 
 
@@ -23,13 +22,10 @@ int List::loadFromFile(string FileName) {
     file.open(FileName);
 
     if(file.is_open()) {
-        // pobiera pierwszy wers - ilosc elementow
+        // pobiera pierwszy wers - ilosc elementow, ale i tak tego nie wykorzystuje w liscie, po prostu chce sie pozbyc pierwszej linii
         getline(file, line);
-        // funkcja stoi konwertuje string do int
-        size = stoi(line);
 
         // wczytywanie kolejnych wersow z pliku do do listy
-
         while(getline(file, line)) {
             addValueStart(stoi(line));
         }

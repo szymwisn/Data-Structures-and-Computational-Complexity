@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-F:/Dev/Git/Data Structures and Computational Complexity Project/List.cpp
-List.h
-F:/Dev/Git/Data Structures and Computational Complexity Project/List.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Table.cpp
+Table.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Table.h
 cstdlib
 -
 ctime
@@ -16,7 +16,7 @@ ctime
 fstream
 -
 
-F:/Dev/Git/Data Structures and Computational Complexity Project/List.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Table.h
 conio.h
 -
 string

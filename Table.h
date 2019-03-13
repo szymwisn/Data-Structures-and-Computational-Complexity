@@ -21,6 +21,9 @@ public:
     void addValueEnd(int value);
     void addValueRandom(int value);
     void deleteFromTable(int index);
+    void deleteFromTableStart();
+    void deleteFromTableEnd();
+    void deleteFromTableRandom();
     void display();
     void generateTable(int size);
 };

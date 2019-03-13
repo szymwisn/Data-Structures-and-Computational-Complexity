@@ -88,49 +88,12 @@ void Table::addValue(int index, int value) {
 
 
 void Table::addValueStart(int value) {
-    int index = 0;
-
-    // zwiekszenie rozmiaru tablicy
-    size++;
-
-    // utworzenie nowej, tymczasowej tablicy
-    temp = new int[size];
-
-    // wstawienie liczby o danym indexie do tymczasowej tablicy
-    temp[index] = value;
-
-    // wypelnienie miejsc po danym indexie w tymczasowej tablicy
-    // size - 1, bo na poczatku size zostal powiekszony o 1, a tu tego nie potrzebujemy
-    for(int i = index; i < size - 1; i++) {
-        temp[i + 1] = tab[i];
-    }
-
-    // wskaznik tablicy wskazuje teraz na nowa tablice
-    tab = new int[size];
-    tab = temp;
+    addValue(0, value);
 }
 
 
 void Table::addValueEnd(int value) {
-    int index = size;
-
-    // zwiekszenie rozmiaru tablicy
-    size++;
-
-    // utworzenie nowej, tymczasowej tablicy
-    temp = new int[size];
-
-    // wstawienie liczby o danym indexie do tymczasowej tablicy
-    temp[index] = value;
-
-    // wypelnienie miejsc przed danym indexem w tymczasowej tablicy
-    for(int i = 0; i < index; i++) {
-        temp[i] = tab[i];
-    }
-
-    // wskaznik tablicy wskazuje teraz na nowa tablice
-    tab = new int[size];
-    tab = temp;
+    addValue(size, value);
 }
 
 
@@ -138,41 +101,14 @@ void Table::addValueRandom(int value) {
     // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb
     srand(time(NULL));
 
-    // wylosowanie indexu
-    int index = rand() % size;
-
-    // zwiekszenie rozmiaru tablicy
-    size++;
-
-    // utworzenie nowej, tymczasowej tablicy
-    temp = new int[size];
-
-    // jesli podany index przekracza rozmiar tablicy nowy element doda sie na ostatniej pozycji
-    if(index > size) {
-        index = size-1;
+    if(size > 1) {
+        // wylosowanie indexu
+        int index = rand() % (size + 1);
+        addValue(index, value);
+    } else if (size == 0) {
+        addValue(0, value);
     }
 
-    // wstawienie liczby o danym indexie do tymczasowej tablicy
-    temp[index] = value;
-
-    // wypelnienie miejsc przed danym indexem w tymczasowej tablicy
-    if(index > 0) {
-        for(int i = 0; i < index; i++) {
-            temp[i] = tab[i];
-        }
-    }
-
-    // wypelnienie miejsc po danym indexie w tymczasowej tablicy
-    // size - 1, bo na poczatku size zostal powiekszony o 1, a tu tego nie potrzebujemy
-    if(index < size) {
-        for(int i = index; i < size - 1; i++) {
-            temp[i + 1] = tab[i];
-        }
-    }
-
-    // wskaznik tablicy wskazuje teraz na nowa tablice
-    tab = new int[size];
-    tab = temp;
 }
 
 
@@ -197,6 +133,33 @@ void Table::deleteFromTable(int index) {
     // wskaznik tablicy wskazuje teraz na nowa tablice
     tab = new int[size];
     tab = temp;
+
+    cout << "size: " << size << endl;
+    cout << "last: " << tab[size-1] << endl;
+    cout << "first: " << tab[0] << endl;
+}
+
+void Table::deleteFromTableStart() {
+    try {
+        deleteFromTable(0);
+    } catch(string w) {
+        cout << w << endl;
+    }
+}
+
+
+void Table::deleteFromTableEnd() {
+    deleteFromTable(size);
+}
+
+
+void Table::deleteFromTableRandom() {
+    // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb
+    srand(time(NULL));
+
+    int index = rand() % size;
+
+    deleteFromTable(index);
 }
 
 
@@ -223,7 +186,7 @@ void Table::generateTable(int size) {
 
     // wypelnienie tablicy tymczasowej losowymi elementami
     for(int i = 0; i < size; i++) {
-        temp[i] = (rand() % 1000) + 1; // zakres <1, 10>
+        temp[i] = (rand() % 1000) + 1; // zakres <1, 1000>
     }
 
     // przypisanie wskaznika tablicy wlasciwej na wskaznik tablicy tymczasowej
