@@ -12,6 +12,7 @@ Node::Node(int value) {
 List::List() {
     head = NULL;
     tail = NULL;
+    size = 0;
 }
 
 
@@ -63,80 +64,101 @@ void List::addValue(int index, int value) {
     // uwtworzenie node o okreslonej wartosci
     Node *node = new Node(value);
 
-    // temp1 - element przed node, temp2 - element za node
-    Node *prevNode, *nextNode;
+    // = = = = = = = = = = = = = = =
+    // dodawanie na poczatku
+    // = = = = = = = = = = = = = = =
+    if(index == 0) {
+        // if - lista pusta
+        // else - lista ma juz jakis element
+        if(head == NULL) {
+            head = tail = node;
+        } else {
+            // dowiazanie node do elementu przed head
+            head->previous = node;
+            // dowiazanie head do elementu za node
+            node->next = head;
+            // po tych dwoch operacjach mamy obustronne powiazanie node i head
+            // NULL <- node <=> head <=> ... -> NULL
 
-    // counter sluzy do iteracji w petli while
-    int counter = 0;
-
-    // przesuwanie od head do wwybranego miejsca
-    prevNode = head;
-    while (counter < index - 1) {
-        prevNode = prevNode->next;
-        counter++;
+            // head ustawiam na ostatni element listy
+            head = node;
+        }
     }
 
-    // zdefiniowanie czym jest nextNode - w tej chwili jest to element bezposrednio po prevNode
-    nextNode = prevNode->next;
+    // = = = = = = = = = = = = = = =
+    // dodawanie na koncu
+    // = = = = = = = = = = = = = = =
+    else if(index == size) {
+        // if - lista pusta
+        // else - lista ma juz jakis element
+        if(tail == NULL) {
+            tail = head = node;
+        } else {
+            // dowiazanie node do elementu za tail
+            tail->next = node;
+            // dowiazanie tail do elementu przed node
+            node->previous = tail;
+            // po tych dwoch operacjach mamy obustronne powiazanie tail i node
+            // NULL <- ... <=> tail <=> node -> NULL
 
-    // powiazanie node z nextNode
-    node->next = nextNode;
-    nextNode->previous = node;
+            // tail ustawiam na ostatni element listy
+            tail = node;
+        }
+    }
 
-    // powiazanie node z prevNode
-    prevNode->next = node;
-    node->previous = prevNode;
+    // = = = = = = = = = = = = = = =
+    // dodawanie w dowolnym miejscu, oprocz poczatku i konca
+    // = = = = = = = = = = = = = = =
+    else if(index > 0 && index < size) {
+        // temp1 - element przed node, temp2 - element za node
+        Node *prevNode, *nextNode;
 
-    // ostateczny efekt:  NULL <= ... <=> prevNode <=> node <=> nextNode <=> ... => NULL
+        // counter sluzy do iteracji w petli while
+        int counter = 0;
+
+        // przesuwanie od head do wwybranego miejsca
+        prevNode = head;
+        while (counter < index - 1) {
+            prevNode = prevNode->next;
+            counter++;
+        }
+
+        // zdefiniowanie czym jest nextNode - w tej chwili jest to element bezposrednio po prevNode
+        nextNode = prevNode->next;
+
+        // powiazanie node z nextNode
+        node->next = nextNode;
+        nextNode->previous = node;
+
+        // powiazanie node z prevNode
+        prevNode->next = node;
+        node->previous = prevNode;
+
+        // ostateczny efekt:  NULL <= ... <=> prevNode <=> node <=> nextNode <=> ... => NULL
+    }
+
+    // zwiekszenie rozmiaru listy
+    size++;
 }
 
 
 void List::addValueStart(int value) {
-    // tworzy node o danej wartosci bez zadnych powiazan
-    Node *node = new Node(value); // previous i next sa NULL
-
-    // if - lista pusta
-    // else - lista ma juz jakis element
-    if(head == NULL) {
-        head = tail = node;
-    } else {
-        // dowiazanie node do elementu przed head
-        head->previous = node;
-        // dowiazanie head do elementu za node
-        node->next = head;
-        // po tych dwoch operacjach mamy obustronne powiazanie node i head
-        // NULL <- node <=> head <=> ... -> NULL
-
-        // head ustawiam na ostatni element listy
-        head = node;
-    }
+    addValue(0, value);
 }
 
 
 void List::addValueEnd(int value) {
-    // tworzy node o danej wartosci bez zadnych powiazan
-    Node *node = new Node(value); // previous i next sa NULL
-
-    // if - lista pusta
-    // else - lista ma juz jakis element
-    if(tail == NULL) {
-        tail = head = node;
-    } else {
-        // dowiazanie node do elementu za tail
-        tail->next = node;
-        // dowiazanie tail do elementu przed node
-        node->previous = tail;
-        // po tych dwoch operacjach mamy obustronne powiazanie tail i node
-        // NULL <- ... <=> tail <=> node -> NULL
-
-        // tail ustawiam na ostatni element listy
-        tail = node;
-    }
+    addValue(size, value);
 }
 
 
 void List::addValueRandom(int value) {
+    // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb
+    srand(time(NULL));
 
+    // wylosowanie indexu
+    int index = rand() % (size);
+    addValue(index, value);
 }
 
 

@@ -101,13 +101,9 @@ void Table::addValueRandom(int value) {
     // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb
     srand(time(NULL));
 
-    if(size > 1) {
-        // wylosowanie indexu
-        int index = rand() % (size + 1);
-        addValue(index, value);
-    } else {
-        addValue(0, value);
-    }
+    // wylosowanie indexu
+    int index = rand() % (size + 1);
+    addValue(index, value);
 }
 
 
@@ -150,10 +146,6 @@ void Table::deleteFromTable(int index) {
     // wskaznik tablicy wskazuje teraz na nowa tablice
     tab = new int[size];
     tab = temp;
-
-    cout << "size: " << size << endl;
-    cout << "last: " << tab[size-1] << endl;
-    cout << "first: " << tab[0] << endl;
 }
 
 void Table::deleteFromTableStart() {
