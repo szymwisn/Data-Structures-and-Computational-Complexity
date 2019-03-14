@@ -11,8 +11,6 @@ List.h
 F:/Dev/Git/Data Structures and Computational Complexity Project/List.h
 cstdlib
 -
-ctime
--
 fstream
 -
 
@@ -23,4 +21,40 @@ string
 -
 iostream
 -
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/Menu.h
+conio.h
+-
+string
+-
+iostream
+-
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/Table.cpp
+Table.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Table.h
+cstdlib
+-
+fstream
+-
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/Table.h
+conio.h
+-
+string
+-
+iostream
+-
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/main.cpp
+conio.h
+-
+string
+-
+iostream
+-
+ctime
+-
+Menu.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Menu.h
 

@@ -1,6 +1,5 @@
 #include "Table.h"
 #include <cstdlib>
-#include <ctime>
 #include <fstream>
 
 Table::Table() {
@@ -98,9 +97,6 @@ void Table::addValueEnd(int value) {
 
 
 void Table::addValueRandom(int value) {
-    // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb
-    srand(time(NULL));
-
     // wylosowanie indexu
     int index = rand() % (size + 1);
     addValue(index, value);
@@ -159,9 +155,6 @@ void Table::deleteFromTableEnd() {
 
 
 void Table::deleteFromTableRandom() {
-    // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb
-    srand(time(NULL));
-
     int index = rand() % size;
     deleteFromTable(index);
 }
@@ -179,9 +172,6 @@ void Table::display() {
 
 
 void Table::generateTable(int size) {
-    // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb
-    srand(time(NULL));
-
     // ustawienie rozmiaru tablicy
     this->size = size;
 

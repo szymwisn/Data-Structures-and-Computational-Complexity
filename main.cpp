@@ -1,6 +1,7 @@
 #include<conio.h>
 #include<string>
 #include<iostream>
+#include <ctime>
 #include "Menu.h"
 
 using namespace std;
@@ -9,6 +10,9 @@ Menu menu;
 
 int main(int argc, char* argv[])
 {
+    // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb
+    srand(time(NULL));
+
     char option;
     do{
         cout << endl;

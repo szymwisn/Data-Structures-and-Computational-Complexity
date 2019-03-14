@@ -1,6 +1,5 @@
 #include "List.h"
 #include <cstdlib>
-#include <ctime>
 #include <fstream>
 
 Node::Node(int value) {
@@ -14,7 +13,6 @@ List::List() {
     tail = NULL;
     size = 0;
 }
-
 
 int List::loadFromFile(string FileName) {
     ifstream file;
@@ -153,9 +151,6 @@ void List::addValueEnd(int value) {
 
 
 void List::addValueRandom(int value) {
-    // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb
-    srand(time(NULL));
-
     // wylosowanie indexu
     int index = rand() % (size);
     addValue(index, value);
@@ -216,9 +211,6 @@ void List::display() {
 
 
 void List::generateList(int size) {
-    // dzieki temu rand nie bedzie generowalo zawsze tej samej sekwencji liczb
-    srand(time(NULL));
-
     // licznik potrzebny do petli
     int counter = 0;
 
