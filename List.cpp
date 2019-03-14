@@ -60,7 +60,34 @@ bool List::IsValueInList(int value) {
 
 
 void List::addValue(int index, int value) {
+    // uwtworzenie node o okreslonej wartosci
+    Node *node = new Node(value);
 
+    // temp1 - element przed node, temp2 - element za node
+    Node *prevNode, *nextNode;
+
+    // counter sluzy do iteracji w petli while
+    int counter = 0;
+
+    // przesuwanie od head do wwybranego miejsca
+    prevNode = head;
+    while (counter < index - 1) {
+        prevNode = prevNode->next;
+        counter++;
+    }
+
+    // zdefiniowanie czym jest nextNode - w tej chwili jest to element bezposrednio po prevNode
+    nextNode = prevNode->next;
+
+    // powiazanie node z nextNode
+    node->next = nextNode;
+    nextNode->previous = node;
+
+    // powiazanie node z prevNode
+    prevNode->next = node;
+    node->previous = prevNode;
+
+    // ostateczny efekt:  NULL <= ... <=> prevNode <=> node <=> nextNode <=> ... => NULL
 }
 
 
@@ -92,7 +119,7 @@ void List::addValueEnd(int value) {
 
     // if - lista pusta
     // else - lista ma juz jakis element
-    if(head == NULL) {
+    if(tail == NULL) {
         tail = head = node;
     } else {
         // dowiazanie node do elementu za tail
