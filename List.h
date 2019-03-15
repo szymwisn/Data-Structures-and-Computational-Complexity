@@ -34,6 +34,7 @@ public:
     void deleteFromListRandom();
     void display();
     void generateList(int size);
+    void clearList();
 };
 
 

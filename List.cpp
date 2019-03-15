@@ -2,6 +2,9 @@
 #include <cstdlib>
 #include <fstream>
 
+const int randomVal = 10000;
+bool decremented = false;
+
 Node::Node(int value) {
     this->value = value;
     this->next = NULL;
@@ -17,6 +20,8 @@ List::List() {
 int List::loadFromFile(string FileName) {
     ifstream file;
     string line;
+
+    clearList();
 
     file.open(FileName);
 
@@ -151,26 +156,145 @@ void List::addValueEnd(int value) {
 
 
 void List::addValueRandom(int value) {
-    // wylosowanie indexu
-    int index = rand() % (size);
-    addValue(index, value);
+    // jesli lista jest pusta to dodajemy element na pierwszej pozycji
+    // bez uwzglednienia tego index nie moglby byc wylosowany gdyby nie bylo elementow
+    // w tablicy, bo byloby rand() % 0
+    if(size == 0) {
+        addValue(0, value);
+    } else {
+        // wylosowanie indexu
+        int index = rand() % size;
+        addValue(index, value);
+    }
 }
 
 
 void List::deleteFromList(int value) {
+    Node *node;
+    bool done = false;
 
+    // TODO jak zostaje pojedynczy elemento to nie daje sie usunac
+    // TODO nie usuwa ostatniego element jak jest sporo elementow
+
+    // zmniejszenie rozmiaru tablicy i poinformowanie funkcji, ktore moga pozniej wystapic -
+    // deleteFromListStart i deleteFromListEnd, ze rozmiar zostal juz pomniejszony i nie
+    // trzeba robic tego drugi raz
+    size--;
+    decremented = true;
+
+    do {
+        // wyszukanie elementu do usuniecia
+        node = head;
+
+        // jesli node jest pojedynczym elementem to nie mozna isc do nastepnego node
+        if (head == tail) {
+            continue;
+        } else {
+            while(node->value != value) {
+                node = node->next;
+            }
+        }
+
+        // usuniecie z poczatku listy
+        if(node == head) {
+            deleteFromListStart();
+        }
+
+        // usuniecie z konca listy
+        else if(node == tail) {
+            deleteFromListEnd();
+        }
+
+        // usuniecie z pozostalych miejsc
+        else {
+            Node *prevNode, *nextNode;
+
+            // zdefiniowanie prevNode i nextNode
+            prevNode = node->previous;
+            nextNode = node->next;
+
+            // usuniecie node
+            node->previous = NULL;
+            node->next = NULL;
+            node = NULL;
+
+            // powiazanie prevNode z nextNode
+            prevNode->next = nextNode;
+            nextNode->previous = prevNode;
+        }
+
+        //sprawdzenie czy istnieje jeszcze jakis node o podanej wartosci
+        node = head;
+        while(node->value != value) {
+            if(node->next == NULL) {
+                break;
+            }
+            node = node->next;
+        }
+
+        if(node == tail) {
+            done = true;
+        }
+    } while(!done);
+
+    decremented = false;
 }
 
 void List::deleteFromListStart() {
+    Node *node = head;
 
+    if(!decremented) {
+        size--;
+    }
+
+    if(node == tail) {
+        head = NULL;
+        tail = NULL;
+    } else {
+        node = head->next;
+        node->previous = NULL;
+        head = node;
+    }
 }
 
 void List::deleteFromListEnd() {
+    Node *node = tail;
 
+    if(!decremented) {
+        size--;
+    }
+
+    if(node == head) {
+        head = NULL;
+        tail = NULL;
+    } else {
+        node = tail->previous;
+        node->next = NULL;
+        tail = node;
+    }
 }
 
 void List::deleteFromListRandom() {
+    Node *node = head;
 
+    bool found = false;
+
+    // wylosowanie wartosci do usuniecia
+    int value = rand() % randomVal;
+
+    while(node->next != NULL) {
+        node = node->next;
+        if(node->value == value) {
+            found = true;
+        }
+    }
+
+    if(found) {
+        deleteFromList(value);
+        cout << "Usunieto element o wartosci: " << value << endl;
+    } else {
+        cout << "Nie znaleziono elementu o wylosowanej wartosci - " << value << "." << endl;
+    }
 }
 
 
@@ -204,18 +328,27 @@ void List::display() {
             node = node->previous;
         } while(node != NULL);
     }
-
-    //TODO to tylko do testow, potem usunac
-    cout << endl << "h: " <<  head->value << endl << "t: " << tail->value;
 }
 
 
 void List::generateList(int size) {
+    clearList();
+
     // licznik potrzebny do petli
     int counter = 0;
 
     while(counter < size) {
-        addValueStart(rand() % 100);
+        addValueStart(rand() % randomVal);
         counter++;
     }
+
+    this->size = size;
+}
+
+void List::clearList() {
+    // TODO wyczyscic pozostale elementy listy
+    // wyczysc stara liste
+    this->head = NULL;
+    this->size = 0;
+    this->tail = NULL;
 }

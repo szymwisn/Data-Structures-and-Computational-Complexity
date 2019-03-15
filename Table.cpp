@@ -2,6 +2,9 @@
 #include <cstdlib>
 #include <fstream>
 
+const int randomVal = 10000;
+
+
 Table::Table() {
     tab = new int[0];
     size = 0;
@@ -17,6 +20,7 @@ int Table::loadFromFile(string FileName) {
     if(file.is_open()) {
         // pobiera pierwszy wers - rozmiar tablicy
         getline(file, line);
+
         // funkcja stoi konwertuje string do int
         size = stoi(line);
 
@@ -180,7 +184,7 @@ void Table::generateTable(int size) {
 
     // wypelnienie tablicy tymczasowej losowymi elementami
     for(int i = 0; i < size; i++) {
-        temp[i] = (rand() % 1000) + 1; // zakres <1, 1000>
+        temp[i] = (rand() % randomVal) + 1; // zakres <1, 1000>
     }
 
     // przypisanie wskaznika tablicy wlasciwej na wskaznik tablicy tymczasowej

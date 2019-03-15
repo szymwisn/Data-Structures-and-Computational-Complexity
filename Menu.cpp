@@ -147,10 +147,10 @@ void Menu::menu_list()
                 myList.display();
                 break;
 
-            case '2': //tutaj usuwanie elemenu z wybranego miejsca listy
-                cout << " podaj index:";
-                cin >> index;
-                myList.deleteFromList(index);
+            case '2': //tutaj usuwanie elementu o podanej wartosci z listy
+                cout << " podaj wartosc:";
+                cin >> value;
+                myList.deleteFromList(value);
                 myList.display();
                 break;
 
