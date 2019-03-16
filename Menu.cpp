@@ -24,6 +24,21 @@ void Menu::displayMenu(string info)
     cout << "Podaj opcje:";
 }
 
+void Menu::displayMenuHeap(string info)
+{
+    cout << endl;
+    cout << info << endl;
+    cout << "1. Wczytaj z pliku" << endl;
+    cout << "2. Usun w wybranym miejscu" << endl;
+    cout << "3. Dodaj" << endl;
+    cout << "4. Znajdz" << endl;
+    cout << "5. Utworz losowo" << endl;
+    cout << "6. Wyswietl" << endl;
+    cout << "7. Test (pomiary)" << endl;
+    cout << "0. Powrot do menu" << endl;
+    cout << "Podaj opcje:";
+}
+
 void Menu::menu_table()
 {
     Table myTab;
@@ -241,7 +256,7 @@ void Menu::menu_heap()
     int index, value;
 
     do{
-        displayMenu("--- KOPIEC BINARNY (MAX) ---");
+        displayMenuHeap("--- KOPIEC BINARNY (MAX) ---");
         cin >> opt;
         cout << endl;
         switch (opt){

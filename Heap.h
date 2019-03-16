@@ -21,8 +21,8 @@ public:
     void display();
     void generateHeap(int size);
     void clearHeap();
-    void swap();
-    void heapify();
+    void swap(int a, int b);
+    void heapify(string direction);
     int getParent(int childIndex);
     int getLeft(int parentIndex);
     int getRight(int parentIndex);

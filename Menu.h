@@ -10,6 +10,7 @@ using namespace std;
 class Menu {
 public:
     void displayMenu(string info);
+    void displayMenuHeap(string info);
     void menu_table();
     void menu_list();
     void menu_heap();
