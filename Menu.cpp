@@ -1,6 +1,7 @@
 #include "Menu.h"
 #include "Table.h"
 #include "List.h"
+#include "Heap.h"
 
 void Menu::displayMenu(string info)
 {
@@ -33,7 +34,7 @@ void Menu::menu_table()
 
     do{
         displayMenu("--- TABLICA ---");
-        opt = getche();
+        cin >> opt;
         cout << endl;
         switch (opt){
             case '1': //tutaj wczytytwanie  tablicy z pliku
@@ -137,7 +138,7 @@ void Menu::menu_list()
 
     do{
         displayMenu("--- LISTA DWUKIERUNKOWA ---");
-        opt = getche();
+        cin >> opt;
         cout << endl;
         switch (opt){
             case '1': //tutaj wczytytwanie listy z pliku
@@ -233,5 +234,63 @@ void Menu::menu_list()
 
 void Menu::menu_heap()
 {
-    //analogicznie jak menu_table()
+    Heap myHeap;
+
+    char opt;
+    string fileName;
+    int index, value;
+
+    do{
+        displayMenu("--- KOPIEC BINARNY (MAX) ---");
+        cin >> opt;
+        cout << endl;
+        switch (opt){
+            case '1': //tutaj wczytytwanie  kopca z pliku
+                cout << " Podaj nazwe zbioru:";
+                cin >> fileName;
+                myHeap.loadFromFile(fileName);
+                myHeap.display();
+                break;
+
+            case '2': //tutaj usuwanie elemenu z kopca
+                cout << " podaj wartosc:";
+                cin >> value;
+                myHeap.deleteFromHeap(value);
+                myHeap.display();
+                break;
+
+            case '3': //tutaj dodawanie elemetu do kopca
+                cout << " podaj wartosc:";
+                cin >> value;
+
+                myHeap.addValue(value);
+                myHeap.display();
+                break;
+
+            case '4': //tutaj znajdowanie elemetu w kopcu
+                cout << " podaj wartosc:";
+                cin >> value;
+                if (myHeap.IsValueInHeap(value))
+                    cout << "podana wartosc jest w kopcu";
+                else
+                    cout << "podanej wartosci NIE ma w kopcu";
+                break;
+
+            case '5':  //tutaj generowanie kopca
+                cout << "Podaj ilosc elementow kopca:";
+                cin >> value;
+                myHeap.generateHeap(value);
+                myHeap.display();
+                break;
+
+            case '6':  //tutaj wyświetlanie tablicy
+                myHeap.display();
+                break;
+
+            case '7': //TODO tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
+                // można sobie tu dodać własne case'y
+                break;
+        }
+
+    } while (opt != '0');
 }

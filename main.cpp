@@ -1,4 +1,3 @@
-#include<conio.h>
 #include<string>
 #include<iostream>
 #include <ctime>
@@ -22,7 +21,8 @@ int main(int argc, char* argv[])
         cout << "3. Kopiec" << endl;
         cout << "0. Wyjscie" << endl;
         cout << "Podaj opcje:";
-        option = getche();
+        cin >> option;
+        //option = getche();
         cout << endl;
 
         switch (option){

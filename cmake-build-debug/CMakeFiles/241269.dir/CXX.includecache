@@ -6,12 +6,20 @@
 
 #IncludeRegexTransform: 
 
-F:/Dev/Git/Data Structures and Computational Complexity Project/List.cpp
-List.h
-F:/Dev/Git/Data Structures and Computational Complexity Project/List.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Heap.cpp
+Heap.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Heap.h
 cstdlib
 -
 fstream
+-
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/Heap.h
+conio.h
+-
+string
+-
+iostream
 -
 
 F:/Dev/Git/Data Structures and Computational Complexity Project/List.h
@@ -21,4 +29,40 @@ string
 -
 iostream
 -
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/Menu.cpp
+Menu.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Menu.h
+Table.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Table.h
+List.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/List.h
+Heap.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Heap.h
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/Menu.h
+conio.h
+-
+string
+-
+iostream
+-
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/Table.h
+conio.h
+-
+string
+-
+iostream
+-
+
+F:/Dev/Git/Data Structures and Computational Complexity Project/main.cpp
+string
+-
+iostream
+-
+ctime
+-
+Menu.h
+F:/Dev/Git/Data Structures and Computational Complexity Project/Menu.h
 
