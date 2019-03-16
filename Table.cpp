@@ -1,6 +1,4 @@
 #include "Table.h"
-#include <cstdlib>
-#include <fstream>
 
 const int randomVal = 10000;
 
@@ -165,6 +163,8 @@ void Table::deleteFromTableRandom() {
 
 
 void Table::display() {
+    cout << endl;
+
     if(size > 0) {
         for(int i = 0; i < size; i++) {
             cout << "[" << i << "] " << tab[i] <<  "   ";
@@ -172,6 +172,8 @@ void Table::display() {
     } else {
         cout << "W tablicy nie ma zadnych elementow." << endl;
     }
+
+    cout << endl;
 }
 
 

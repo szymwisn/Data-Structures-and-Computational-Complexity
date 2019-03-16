@@ -1,9 +1,11 @@
 #ifndef INC_241269_MENU_H
 #define INC_241269_MENU_H
 
-#include<conio.h>
 #include<string>
 #include<iostream>
+#include "Table.h"
+#include "List.h"
+#include "Heap.h"
 
 using namespace std;
 

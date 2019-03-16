@@ -1,9 +1,4 @@
-#include<string>
-#include<iostream>
-#include <ctime>
 #include "Menu.h"
-
-using namespace std;
 
 Menu menu;
 

@@ -1,7 +1,5 @@
 #include "Menu.h"
-#include "Table.h"
-#include "List.h"
-#include "Heap.h"
+
 
 void Menu::displayMenu(string info)
 {
@@ -24,6 +22,7 @@ void Menu::displayMenu(string info)
     cout << "Podaj opcje:";
 }
 
+
 void Menu::displayMenuHeap(string info)
 {
     cout << endl;
@@ -38,6 +37,7 @@ void Menu::displayMenuHeap(string info)
     cout << "0. Powrot do menu" << endl;
     cout << "Podaj opcje:";
 }
+
 
 void Menu::menu_table()
 {
@@ -143,6 +143,7 @@ void Menu::menu_table()
     } while (opt != '0');
 }
 
+
 void Menu::menu_list()
 {
     List myList;
@@ -246,6 +247,7 @@ void Menu::menu_list()
 
     } while (opt != '0');
 }
+
 
 void Menu::menu_heap()
 {

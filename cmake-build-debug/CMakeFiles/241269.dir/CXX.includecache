@@ -6,19 +6,17 @@
 
 #IncludeRegexTransform: 
 
-F:/Dev/Git/Data Structures and Computational Complexity Project/Heap.cpp
-Heap.h
-F:/Dev/Git/Data Structures and Computational Complexity Project/Heap.h
-cstdlib
--
-fstream
--
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/List.cpp
+List.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/List.h
 
-F:/Dev/Git/Data Structures and Computational Complexity Project/Heap.h
-conio.h
--
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/List.h
 string
 -
 iostream
+-
+cstdlib
+-
+fstream
 -
 

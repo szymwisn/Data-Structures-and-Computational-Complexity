@@ -1,9 +1,8 @@
 #include "List.h"
-#include <cstdlib>
-#include <fstream>
 
 const int randomVal = 10000;
 bool decremented = false;
+
 
 Node::Node(int value) {
     this->value = value;
@@ -11,11 +10,13 @@ Node::Node(int value) {
     this->previous = NULL;
 }
 
+
 List::List() {
     head = NULL;
     tail = NULL;
     size = 0;
 }
+
 
 int List::loadFromFile(string FileName) {
     ifstream file;
@@ -240,6 +241,7 @@ void List::deleteFromList(int value) {
     decremented = false;
 }
 
+
 void List::deleteFromListStart() {
     Node *node = head;
 
@@ -257,6 +259,7 @@ void List::deleteFromListStart() {
     }
 }
 
+
 void List::deleteFromListEnd() {
     Node *node = tail;
 
@@ -273,6 +276,7 @@ void List::deleteFromListEnd() {
         tail = node;
     }
 }
+
 
 void List::deleteFromListRandom() {
     Node *node = head;
@@ -302,6 +306,8 @@ void List::display() {
     // utworzenie tymczasowego node wskazujacego na head
     Node *node = head;
 
+    cout << endl;
+
     // od przodu do tylu w pierwszej linii
     cout << "head -> tail: ";
     if (head == NULL) {
@@ -313,6 +319,7 @@ void List::display() {
         } while(node != NULL);
     }
 
+    cout << endl;
     cout << endl;
 
     // przestawienie wskaznika na tail
@@ -328,6 +335,8 @@ void List::display() {
             node = node->previous;
         } while(node != NULL);
     }
+
+    cout << endl;
 }
 
 
@@ -344,6 +353,7 @@ void List::generateList(int size) {
 
     this->size = size;
 }
+
 
 void List::clearList() {
     // TODO wyczyscic pozostale elementy listy

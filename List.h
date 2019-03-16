@@ -1,9 +1,10 @@
 #ifndef INC_241269_LIST_H
 #define INC_241269_LIST_H
 
-#include<conio.h>
 #include<string>
 #include<iostream>
+#include <cstdlib>
+#include <fstream>
 
 using namespace std;
 

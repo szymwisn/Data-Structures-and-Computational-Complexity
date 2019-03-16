@@ -1,7 +1,8 @@
 #ifndef INC_241269_TABLE_H
 #define INC_241269_TABLE_H
 
-#include<conio.h>
+#include <cstdlib>
+#include <fstream>
 #include<string>
 #include<iostream>
 

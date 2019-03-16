@@ -1,14 +1,14 @@
 #include "Heap.h"
-#include <cstdlib>
-#include <fstream>
 
 const int randomVal = 10000;
+
 
 Heap::Heap() {
     size = 0;
     max_size = 100;
     arr = new int[max_size];
 }
+
 
 int Heap::loadFromFile(string FileName) {
     ifstream file;
@@ -43,6 +43,7 @@ int Heap::loadFromFile(string FileName) {
     return 0;
 }
 
+
 bool Heap::IsValueInHeap(int value) {
     // iteruje po tablicy i sprawdza czy element tablicy jest rowny podanej wartosci
     for(int i = 0 ; i < size; i++) {
@@ -54,6 +55,7 @@ bool Heap::IsValueInHeap(int value) {
     return false;
 }
 
+
 void Heap::addValue(int value) {
     size++;
     arr[size-1] = value;
@@ -61,6 +63,7 @@ void Heap::addValue(int value) {
     //TODO up czy down?
     heapify("up");
 }
+
 
 void Heap::deleteFromHeap(int value) {
     int position = 0;
@@ -90,6 +93,7 @@ void Heap::deleteFromHeap(int value) {
     heapify("down");
 }
 
+
 void Heap::display() {
     cout << "\nInterpretacja w formie drzewa: " << endl;
 
@@ -103,6 +107,7 @@ void Heap::display() {
     cout << endl;
 }
 
+
 void Heap::generateHeap(int size) {
     this->size = size;
 
@@ -114,6 +119,7 @@ void Heap::generateHeap(int size) {
     heapify("down");
 }
 
+
 void Heap::clearHeap() {
     // TODO sprawdzic
 
@@ -124,6 +130,7 @@ void Heap::clearHeap() {
     size = 0;
 }
 
+
 void Heap::swap(int a, int b) {
     int temp = arr[a];
 
@@ -133,6 +140,7 @@ void Heap::swap(int a, int b) {
     }
 }
 
+
 void Heap::heapify(string direction) {
     if(direction == "up") {
 
@@ -141,25 +149,31 @@ void Heap::heapify(string direction) {
     }
 }
 
+
 int Heap::getParent(int childIndex) {
     return arr[getParentIndex(childIndex)];
 }
+
 
 int Heap::getLeft(int parentIndex) {
     return arr[getLeftIndex(parentIndex)];
 }
 
+
 int Heap::getRight(int parentIndex) {
     return arr[getRightIndex(parentIndex)];
 }
+
 
 int Heap::getParentIndex(int childIndex) {
     return (childIndex - 1) / 2;
 }
 
+
 int Heap::getLeftIndex(int parentIndex) {
     return parentIndex * 2 + 1;
 }
+
 
 int Heap::getRightIndex(int parentIndex) {
     return parentIndex * 2 + 2;
