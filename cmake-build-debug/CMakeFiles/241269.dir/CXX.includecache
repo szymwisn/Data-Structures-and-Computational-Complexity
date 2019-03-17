@@ -6,9 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/szymon/Git/Data-Structures-and-Computational-Complexity/List.cpp
-List.h
-/home/szymon/Git/Data-Structures-and-Computational-Complexity/List.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Heap.cpp
+Heap.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Heap.h
+
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Heap.h
+string
+-
+iostream
+-
+cstdlib
+-
+fstream
+-
+iomanip
+-
+cmath
+-
 
 /home/szymon/Git/Data-Structures-and-Computational-Complexity/List.h
 string
@@ -19,4 +33,34 @@ cstdlib
 -
 fstream
 -
+
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Menu.cpp
+Menu.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Menu.h
+
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Menu.h
+string
+-
+iostream
+-
+Table.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.h
+List.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/List.h
+Heap.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Heap.h
+
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.h
+cstdlib
+-
+fstream
+-
+string
+-
+iostream
+-
+
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/main.cpp
+Menu.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Menu.h
 

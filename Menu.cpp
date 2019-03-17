@@ -119,9 +119,9 @@ void Menu::menu_table()
                 cout << " podaj wartosc:";
                 cin >> value;
                 if (myTab.IsValueInTable(value))
-                    cout << "podana wartosc jest w tablicy";
+                    cout << "\npodana wartosc jest w tablicy\n";
                 else
-                    cout << "podanej wartosci NIE ma w tablicy";
+                    cout << "\npodanej wartosci NIE ma w tablicy\n";
                 break;
 
             case 'w':  //tutaj generowanie  tablicy
@@ -224,9 +224,9 @@ void Menu::menu_list()
                 cout << " podaj wartosc:";
                 cin >> value;
                 if (myList.IsValueInList(value))
-                    cout << "podana wartosc jest w liscie";
+                    cout << "\npodana wartosc jest w liscie\n";
                 else
-                    cout << "podanej wartosci NIE ma w liscie";
+                    cout << "\npodanej wartosci NIE ma w liscie\n";
                 break;
 
             case 'w':  //tutaj generowanie listy
@@ -288,9 +288,9 @@ void Menu::menu_heap()
                 cout << " podaj wartosc:";
                 cin >> value;
                 if (myHeap.IsValueInHeap(value))
-                    cout << "podana wartosc jest w kopcu";
+                    cout << "\npodana wartosc jest w kopcu\n";
                 else
-                    cout << "podanej wartosci NIE ma w kopcu";
+                    cout << "\npodanej wartosci NIE ma w kopcu\n";
                 break;
 
             case '5':  //tutaj generowanie kopca

@@ -5,6 +5,8 @@
 #include<iostream>
 #include <cstdlib>
 #include <fstream>
+#include<iomanip>
+#include<cmath>
 
 using namespace std;
 
@@ -17,19 +19,17 @@ public:
     Heap();
     int loadFromFile(string FileName);
     bool IsValueInHeap(int value);
+    void heapifyUp(int index);
+    void heapifyDown(int index);
     void addValue(int value);
     void deleteFromHeap(int value);
+    void swap(int a, int b);
     void display();
     void generateHeap(int size);
     void clearHeap();
-    void swap(int a, int b);
-    void heapify(string direction);
-    int getParent(int childIndex);
-    int getLeft(int parentIndex);
-    int getRight(int parentIndex);
     int getParentIndex(int childIndex);
-    int getLeftIndex(int parentIndex);
-    int getRightIndex(int parentIndex);
+    int getLeftChildIndex(int parentIndex);
+    int getRightChildIndex(int parentIndex);
 };
 
 
