@@ -2,6 +2,7 @@
 
 const int randomVal = 1000;
 
+
 Heap::Heap() {
     size = 0;
     max_size = 31;
@@ -69,7 +70,7 @@ void Heap::heapifyUp(int index) {
         // zamiana elementow miejscami
         swap(index, parentIndex);
 
-        // rekurencyjne wywolanie funkcji dla kolejnych elementow, od parentIndex
+        // rekurencyjne wywolanie funkcji dla kolejnych elementow, zaczynajac od indexu rodzica
         index = parentIndex;
         heapifyUp(index);
     }
@@ -77,32 +78,30 @@ void Heap::heapifyUp(int index) {
 
 
 void Heap::heapifyDown(int index) {
+    // znalezienie indexow lewego i prawego potomka danego indexu
     int leftChildIndex = getLeftChildIndex(index);
     int rightChildIndex = getRightChildIndex(index);
 
-//    cout << endl << endl << "index: " << index<< endl;
-//    cout << "parent: " << getParentIndex(index) << endl;
-//    cout << "left child: " << leftChildIndex << endl;
-//    cout << "right child: " << rightChildIndex << endl;
-//    cout << "size: " << size << endl;
+    int indexOfMax;
 
-    int indexOfLargest;
-
+    // porownanie lewego dziecka z rodzicem
     if(leftChildIndex <= size && arr[leftChildIndex] > arr[index]) {
-        indexOfLargest = leftChildIndex;
+        indexOfMax = leftChildIndex;
     } else {
-        indexOfLargest = index;
+        indexOfMax = index;
     }
 
-    if(rightChildIndex <= size && arr[rightChildIndex] > arr[indexOfLargest]) {
-        indexOfLargest = rightChildIndex;
+    // porownanie prawego dziecka z najwiekszym elementem w danym obrebie
+    if(rightChildIndex <= size && arr[rightChildIndex] > arr[indexOfMax]) {
+        indexOfMax = rightChildIndex;
     }
 
-//    cout << "largest: " << indexOfLargest;
+    if (indexOfMax != index) {
+        // zamiana miejscami - przesuniecie wiekszego elementu w gore drzewa
+        swap(index, indexOfMax);
 
-    if (indexOfLargest != index) {
-        swap(index, indexOfLargest);
-        heapifyDown(indexOfLargest);
+        // rekurencja dla reszty drzewa
+        heapifyDown(indexOfMax);
     }
 }
 
@@ -123,31 +122,22 @@ void Heap::addValue(int value) {
 
 
 void Heap::deleteFromHeap(int value) {
-    // TODO przywrocenie wlasnosci kopca
-
     if(IsValueInHeap(value)) {
         int position = 0;
-        int *temp = new int[size];
 
         // znalezienie pozycji, ktora chcemy usunac
-            while(arr[position] != value) {
-                position++;
-            }
+        while(arr[position] != value) {
+            position++;
+        }
 
-            // wypelnienie tablicy tymczasowej elementami przed dana pozycja
-            for(int i = 0; i < position; i++) {
-                temp[i] = arr[i];
-            }
+        // przesuniecie ostatniego elementu na zadana pozycje
+        arr[position] = arr[size - 1];
 
-            // zmniejszenie rozmiaru tablicy
-            size--;
+        // zmniejszenie rozmiaru tablicy
+        size--;
 
-            // wypelnienie tablicy tymczasowej elementami po danej pozycji
-            for(int i = position; i < size; i++) {
-                temp[i] = arr[i + 1];
-            }
-
-            arr = temp;
+        // przywrocenie wlasnosci kopca
+        heapifyDown(position);
     } else {
         cout << endl << "W tym kopcu nie ma podanego elementu!" << endl;
     }
@@ -155,7 +145,6 @@ void Heap::deleteFromHeap(int value) {
 
 
 void Heap::display() {
-
     if (size == 0) {
         cout << endl <<"Brak danych elementow do wyswietlenia." << endl;
     } else {
@@ -216,8 +205,10 @@ void Heap::display() {
 
 
 void Heap::generateHeap(int size) {
+    // wyczyszczenie kopca
     clearHeap();
 
+    // utworzenie n = size elementow o losowych wartosci
     for(int i = 0; i < size; i ++) {
         addValue(rand() % randomVal);
     }
