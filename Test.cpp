@@ -15,7 +15,13 @@ void Test::displayMenu(string info) {
 }
 
 void Test::displayMenuHeap(string info) {
-
+    cout << endl;
+    cout << info << endl;
+    cout << "1. Usun w wybranym miejscu (na potrzeby testu wybrane = losowe)" << endl;
+    cout << "2. Dodaj" << endl;
+    cout << "3. Utworz losowo" << endl;
+    cout << "0. Powrot do menu" << endl;
+    cout << "Podaj opcje:";
 }
 
 void Test::menu_table() {
@@ -343,5 +349,84 @@ void Test::menu_list() {
 }
 
 void Test::menu_heap() {
+    Heap myHeap;
 
+    char opt;
+    string fileName;
+    int index, value;
+    int sum = 0, average = 0;
+    int n = 1;
+
+    do {
+        displayMenuHeap("--- TESTOWANIE KOPCA ---");
+        cin >> opt;
+        cout << endl;
+
+        cout << "Ile razy wykonac test?";
+        cin >> n;
+
+        if (opt == '1') {
+            //tutaj usuwanie elemenu z kopca
+
+            myHeap.generateHeap(n);
+
+            for(int i = 0; i < n; i++) {
+                value = rand() % 1000;
+                auto beginning = std::chrono::steady_clock::now();
+                myHeap.deleteFromHeap(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+
+        else if (opt == '2') {
+            //tutaj dodawanie elementu
+
+            myHeap.clearHeap();
+
+            cout << " podaj wartosc:";
+            cin >> value;
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myHeap.addValue(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+
+        else if(opt == '3') {
+            //tutaj tworzenie kopca z losowymi wartosciami
+
+            cout << "Podaj ilosc elementow kopca:";
+            cin >> value;
+
+            myHeap.generateHeap(value);
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myHeap.generateHeap(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+    } while (opt != '0');
 }

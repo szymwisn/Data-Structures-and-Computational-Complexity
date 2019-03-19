@@ -5,7 +5,7 @@ const int randomVal = 1000;
 
 Heap::Heap() {
     size = 0;
-    max_size = 31;
+    max_size = 10000;
     arr = new int[max_size];
 }
 
@@ -116,7 +116,7 @@ void Heap::addValue(int value) {
         // przywrocenie wlasnosci kopca
         heapifyUp(index);
     } else {
-        cout << endl << "W tym kopcu nie moze byc wiecej elementow niz 31!" << endl;
+        cout << endl << "W tym kopcu nie moze byc wiecej elementow niz " << max_size << "." << endl;
     }
 }
 
@@ -139,8 +139,10 @@ void Heap::deleteFromHeap(int value) {
 
             // przywrocenie wlasnosci kopca
             heapifyDown(position);
+
+            cout << endl << "Usunieto wartosc - " << value << endl;
         } else {
-            cout << endl << "W tym kopcu nie ma podanego elementu!" << endl;
+            cout << endl << "W tym kopcu nie ma podanego elementu! - " << value << endl;
         }
     } else {
         cout << endl << "W kopcu nie ma zadnych elementow." << endl;
@@ -152,7 +154,7 @@ void Heap::display() {
     if (size == 0) {
         cout << endl <<"Brak elementow do wyswietlenia." << endl;
     } else {
-        cout << "\nInterpretacja w formie drzewa: " << endl;
+        cout << "\nInterpretacja w formie drzewa (wyswietla sie tylko pierwsze 31 elementow): " << endl;
 
         cout << setw(49) << arr[0] << endl << endl;
         for (int i = 1; i < 3; i++) {
@@ -198,7 +200,7 @@ void Heap::display() {
 
         cout << endl << endl;
 
-        cout << "Iterpretacja w formie tablicy: " << endl;
+        cout << "Iterpretacja w formie tablicy (wyswietlaja sie wszystkie elementy): " << endl;
         for(int i = 0; i < size; i++) {
             cout << "[" << i << "] " << arr[i] << " ";
         }
