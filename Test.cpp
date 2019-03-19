@@ -25,12 +25,16 @@ void Test::menu_table() {
     string fileName;
     int index, value;
     int sum = 0, average = 0;
-    const int n = 1000;
+    int n = 1;
 
     do {
         displayMenu("--- TESTOWANIE TABLICY ---");
         cin >> opt;
         cout << endl;
+
+        cout << "Ile razy wykonac test?";
+        cin >> n;
+
         if (opt == '1') {
             //tutaj usuwanie elemenu z tablicy na poczatku
 
@@ -94,6 +98,8 @@ void Test::menu_table() {
         else if (opt == '4') {
             //tutaj dodawanie pierwszego elemetu do tablicy
 
+            myTab.generateTable(0);
+
             cout << " podaj wartosc:";
             cin >> value;
 
@@ -114,6 +120,9 @@ void Test::menu_table() {
 
         else if (opt == '5') {
             //tutaj dodawanie ostatniego elemetu do tablicy
+
+            myTab.generateTable(0);
+
             cout << " podaj wartosc:";
             cin >> value;
 
@@ -134,6 +143,8 @@ void Test::menu_table() {
 
         else if (opt == '6') {
             //tutaj dodawanie losowego elemetu do tablicy
+
+            myTab.generateTable(0);
 
             cout << " podaj wartosc:";
             cin >> value;

@@ -171,133 +171,135 @@ void List::addValueRandom(int value) {
 
 
 void List::deleteFromList(int value) {
-    Node *node;
-    bool done = false;
+    if(size > 0 ) {
+        Node *node;
 
-    // TODO jak zostaje pojedynczy elemento to nie daje sie usunac
-    // TODO nie usuwa ostatniego element jak jest sporo elementow
+        // zmniejszenie rozmiaru listy i poinformowanie funkcji, ktore moga pozniej wystapic -
+        // deleteFromListStart i deleteFromListEnd, ze rozmiar zostal juz pomniejszony i nie
+        // trzeba robic tego drugi raz
+        size--;
+        decremented = true;
 
-    // zmniejszenie rozmiaru tablicy i poinformowanie funkcji, ktore moga pozniej wystapic -
-    // deleteFromListStart i deleteFromListEnd, ze rozmiar zostal juz pomniejszony i nie
-    // trzeba robic tego drugi raz
-    size--;
-    decremented = true;
+        bool found = false;
 
-    do {
         // wyszukanie elementu do usuniecia
         node = head;
-
-        // jesli node jest pojedynczym elementem to nie mozna isc do nastepnego node
-        if (head == tail) {
-            continue;
-        } else {
-            while(node->value != value) {
-                node = node->next;
-            }
-        }
-
-        // usuniecie z poczatku listy
-        if(node == head) {
-            deleteFromListStart();
-        }
-
-        // usuniecie z konca listy
-        else if(node == tail) {
-            deleteFromListEnd();
-        }
-
-        // usuniecie z pozostalych miejsc
-        else {
-            Node *prevNode, *nextNode;
-
-            // zdefiniowanie prevNode i nextNode
-            prevNode = node->previous;
-            nextNode = node->next;
-
-            // usuniecie node
-            node->previous = NULL;
-            node->next = NULL;
-            node = NULL;
-
-            // powiazanie prevNode z nextNode
-            prevNode->next = nextNode;
-            nextNode->previous = prevNode;
-        }
-
-        //sprawdzenie czy istnieje jeszcze jakis node o podanej wartosci
-        node = head;
-        while(node->value != value) {
-            if(node->next == NULL) {
-                break;
-            }
+        while(node->value != value && node->next != NULL) {
             node = node->next;
         }
 
-        if(node == tail) {
-            done = true;
+        // sprawdzenie czy znaleziono element o podanej wartosci
+        if(node->value == value) {
+            found = true;
         }
-    } while(!done);
 
-    decremented = false;
+        if(found) {
+            // usuniecie z poczatku listy
+            if(node == head) {
+                deleteFromListStart();
+            }
+
+                // usuniecie z konca listy
+            else if(node == tail) {
+                deleteFromListEnd();
+            }
+
+                // usuniecie z pozostalych miejsc
+            else {
+                Node *prevNode, *nextNode;
+
+                // zdefiniowanie prevNode i nextNode
+                prevNode = node->previous;
+                nextNode = node->next;
+
+                // usuniecie node
+                node->previous = NULL;
+                node->next = NULL;
+                node = NULL;
+
+                // powiazanie prevNode z nextNode
+                prevNode->next = nextNode;
+                nextNode->previous = prevNode;
+            }
+        } else {
+            cout << "Nie znaleziono elementu o podanej wartosci." << endl;
+        }
+
+        decremented = false;
+    } else {
+        cout << "Brak elementow do usuniecia. " << endl;
+    }
 }
 
 
 void List::deleteFromListStart() {
-    Node *node = head;
+    if(size > 0) {
+        Node *node = head;
 
-    if(!decremented) {
-        size--;
-    }
+        if(!decremented) {
+            size--;
+        }
 
-    if(node == tail) {
-        head = NULL;
-        tail = NULL;
+        if(node == tail) {
+            head = NULL;
+            tail = NULL;
+        } else {
+            node = head->next;
+            node->previous = NULL;
+            head = node;
+        }
     } else {
-        node = head->next;
-        node->previous = NULL;
-        head = node;
+        cout << "Brak elementow do usuniecia. " << endl;
     }
 }
 
 
 void List::deleteFromListEnd() {
-    Node *node = tail;
+    if(size > 0) {
+        Node *node = tail;
 
-    if(!decremented) {
-        size--;
-    }
+        if(!decremented) {
+            size--;
+        }
 
-    if(node == head) {
-        head = NULL;
-        tail = NULL;
+        if(node == head) {
+            head = NULL;
+            tail = NULL;
+        } else {
+            node = tail->previous;
+            node->next = NULL;
+            tail = node;
+        }
     } else {
-        node = tail->previous;
-        node->next = NULL;
-        tail = node;
+        cout << "Brak elementow do usuniecia. " << endl;
     }
 }
 
 
 void List::deleteFromListRandom() {
-    Node *node = head;
+    if(size > 0) {
+        Node *node = head;
 
-    bool found = false;
+        bool found = false;
 
-    // wylosowanie wartosci do usuniecia
-    int value = rand() % randomVal;
+        // wylosowanie wartosci do usuniecia
+        int value = rand() % randomVal;
 
-    while(node->next != NULL) {
-        node = node->next;
-        if(node->value == value) {
-            found = true;
+        while(node->next != NULL) {
+            node = node->next;
+            if(node->value == value) {
+                found = true;
+            }
         }
-    }
 
-    if(found) {
-        deleteFromList(value);
-        cout << "Usunieto element o wartosci: " << value << endl;
+        if(found) {
+            deleteFromList(value);
+            cout << "Usunieto element o wartosci: " << value << endl;
+        } else {
+            cout << "Nie znaleziono elementu o wylosowanej wartosci - " << value << "." << endl;
+        }
     } else {
-        cout << "Nie znaleziono elementu o wylosowanej wartosci - " << value << "." << endl;
+        cout << "Brak elementow do usuniecia. " << endl;
     }
 }
 
@@ -356,7 +358,6 @@ void List::generateList(int size) {
 
 
 void List::clearList() {
-    // TODO wyczyscic pozostale elementy listy
     // wyczysc stara liste
     this->head = NULL;
     this->size = 0;
