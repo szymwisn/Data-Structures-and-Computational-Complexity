@@ -45,7 +45,7 @@ int Heap::loadFromFile(string FileName) {
 
 bool Heap::IsValueInHeap(int value) {
     // iteruje po tablicy i sprawdza czy element tablicy jest rowny podanej wartosci
-    for(int i = 0 ; i < size; i++) {
+    for(int i = 0; i < size; i++) {
         if(arr[i] == value) {
             return true;
         }
@@ -122,31 +122,35 @@ void Heap::addValue(int value) {
 
 
 void Heap::deleteFromHeap(int value) {
-    if(IsValueInHeap(value)) {
-        int position = 0;
+    if(size > 0) {
+        if(IsValueInHeap(value)) {
+            int position = 0;
 
-        // znalezienie pozycji, ktora chcemy usunac
-        while(arr[position] != value) {
-            position++;
+            // znalezienie pozycji, ktora chcemy usunac
+            while(arr[position] != value) {
+                position++;
+            }
+
+            // przesuniecie ostatniego elementu na zadana pozycje
+            arr[position] = arr[size - 1];
+
+            // zmniejszenie rozmiaru tablicy
+            size--;
+
+            // przywrocenie wlasnosci kopca
+            heapifyDown(position);
+        } else {
+            cout << endl << "W tym kopcu nie ma podanego elementu!" << endl;
         }
-
-        // przesuniecie ostatniego elementu na zadana pozycje
-        arr[position] = arr[size - 1];
-
-        // zmniejszenie rozmiaru tablicy
-        size--;
-
-        // przywrocenie wlasnosci kopca
-        heapifyDown(position);
     } else {
-        cout << endl << "W tym kopcu nie ma podanego elementu!" << endl;
+        cout << endl << "W kopcu nie ma zadnych elementow." << endl;
     }
 }
 
 
 void Heap::display() {
     if (size == 0) {
-        cout << endl <<"Brak danych elementow do wyswietlenia." << endl;
+        cout << endl <<"Brak elementow do wyswietlenia." << endl;
     } else {
         cout << "\nInterpretacja w formie drzewa: " << endl;
 
