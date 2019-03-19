@@ -242,8 +242,8 @@ void Menu::menu_list()
                 myList.display();
                 break;
 
-            case 'r': //TODO tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
-                // można sobie tu dodać własne case'y
+            case 'r': // funkcja do eksperymentow
+                test.menu_list();
                 break;
         }
 
@@ -306,8 +306,8 @@ void Menu::menu_heap()
                 myHeap.display();
                 break;
 
-            case '7': //TODO tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
-                // można sobie tu dodać własne case'y
+            case '7': // funkcja do eksperymentow
+                test.menu_heap();
                 break;
         }
 

@@ -51,8 +51,7 @@ void Test::menu_table() {
             average = sum / n;
             sum = 0;
 
-            myTab.display();
-            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
         else if (opt == '2') {
@@ -71,8 +70,7 @@ void Test::menu_table() {
             average = sum / n;
             sum = 0;
 
-            myTab.display();
-            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
         else if(opt == '3') {
@@ -91,8 +89,7 @@ void Test::menu_table() {
             average = sum / n;
             sum = 0;
 
-            myTab.display();
-            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
         else if (opt == '4') {
@@ -114,8 +111,7 @@ void Test::menu_table() {
             average = sum / n;
             sum = 0;
 
-            myTab.display();
-            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
         else if (opt == '5') {
@@ -137,8 +133,7 @@ void Test::menu_table() {
             average = sum / n;
             sum = 0;
 
-            myTab.display();
-            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
         else if (opt == '6') {
@@ -160,8 +155,7 @@ void Test::menu_table() {
             average = sum / n;
             sum = 0;
 
-            myTab.display();
-            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
         else if (opt == '7') {
@@ -181,14 +175,171 @@ void Test::menu_table() {
             average = sum / n;
             sum = 0;
 
-            myTab.display();
-            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
     } while (opt != '0');
 }
 
 void Test::menu_list() {
+    List myList;
 
+    char opt;
+    string fileName;
+    int index, value;
+    int sum = 0, average = 0;
+    int n = 1;
+
+    do {
+        displayMenu("--- TESTOWANIE LISTY ---");
+        cin >> opt;
+        cout << endl;
+
+        cout << "Ile razy wykonac test?";
+        cin >> n;
+
+        if (opt == '1') {
+            //tutaj usuwanie elemenu z listy na poczatku
+
+            myList.generateList(n);
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myList.deleteFromListStart();
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+
+        else if (opt == '2') {
+            //tutaj usuwanie elemenu na koncu
+
+            myList.generateList(n);
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myList.deleteFromListEnd();
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+
+        else if(opt == '3') {
+            //tutaj usuwanie elemenu w losowym miejscu
+
+            myList.generateList(n);
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myList.deleteFromListRandom();
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+
+        else if (opt == '4') {
+            //tutaj dodawanie pierwszego elemetu
+
+            myList.clearList();
+
+            cout << " podaj wartosc:";
+            cin >> value;
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myList.addValueStart(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+
+        else if (opt == '5') {
+            //tutaj dodawanie ostatniego elemetu
+
+            myList.clearList();
+
+            cout << " podaj wartosc:";
+            cin >> value;
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myList.addValueEnd(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+
+        else if (opt == '6') {
+            //tutaj dodawanie losowego elemetu
+
+            myList.clearList();
+
+            cout << " podaj wartosc:";
+            cin >> value;
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myList.addValueRandom(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+
+        else if (opt == '7') {
+            //tutaj generowanie listy
+
+            cout << "Podaj ilosc elementow tablicy:";
+            cin >> value;
+
+            for( int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myList.generateList(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+    } while (opt != '0');
 }
 
 void Test::menu_heap() {
