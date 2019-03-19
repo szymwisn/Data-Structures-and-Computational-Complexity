@@ -108,6 +108,12 @@
 		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.h">
 			<Option target="241269"/>
 		</Unit>
+		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/Test.cpp">
+			<Option target="241269"/>
+		</Unit>
+		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/Test.h">
+			<Option target="241269"/>
+		</Unit>
 		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/main.cpp">
 			<Option target="241269"/>
 		</Unit>

@@ -12,9 +12,16 @@ CMakeFiles/241269.dir/Menu.cpp.o: ../List.h
 CMakeFiles/241269.dir/Menu.cpp.o: ../Menu.cpp
 CMakeFiles/241269.dir/Menu.cpp.o: ../Menu.h
 CMakeFiles/241269.dir/Menu.cpp.o: ../Table.h
+CMakeFiles/241269.dir/Menu.cpp.o: ../Test.h
 
 CMakeFiles/241269.dir/Table.cpp.o: ../Table.cpp
 CMakeFiles/241269.dir/Table.cpp.o: ../Table.h
+
+CMakeFiles/241269.dir/Test.cpp.o: ../Heap.h
+CMakeFiles/241269.dir/Test.cpp.o: ../List.h
+CMakeFiles/241269.dir/Test.cpp.o: ../Table.h
+CMakeFiles/241269.dir/Test.cpp.o: ../Test.cpp
+CMakeFiles/241269.dir/Test.cpp.o: ../Test.h
 
 CMakeFiles/241269.dir/main.cpp.o: ../Heap.h
 CMakeFiles/241269.dir/main.cpp.o: ../List.h

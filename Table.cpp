@@ -106,44 +106,48 @@ void Table::addValueRandom(int value) {
 
 
 void Table::deleteFromTable(int index) {
-    // zmniejszenie rozmiaru tablicy
-    size--;
+    if(size > 0) {
+        // zmniejszenie rozmiaru tablicy
+        size--;
 
-    // utworzenie nowej, tymczasowej tablicy
-    temp = new int[size];
+        // utworzenie nowej, tymczasowej tablicy
+        temp = new int[size];
 
-    // usuwanie pierwszego elementu - wypelnienie tymczasowej tablicy elementami z indexem 1 do konca
-    if(index == 0) {
-        // size + 1, bo wczesniej pomniejszono o 1, a tu jeszcze potrzebujemy tego elementu
-        for(int i = 1; i < size + 1 ; i++) {
-            temp[i - 1] = tab[i];
+        // usuwanie pierwszego elementu - wypelnienie tymczasowej tablicy elementami z indexem 1 do konca
+        if(index == 0) {
+            // size + 1, bo wczesniej pomniejszono o 1, a tu jeszcze potrzebujemy tego elementu
+            for(int i = 1; i < size + 1 ; i++) {
+                temp[i - 1] = tab[i];
+            }
         }
+
+        // usuwanie ostatniego elementu - wypelnienie tymczasowej tablicy elementami z indexem 0 do size - 2
+        if(index == size) {
+            for(int i = 0; i < index; i++) {
+                temp[i] = tab[i];
+            }
+        }
+
+        // pozostale przypadki
+        if(index > 0 && index < size) {
+            // wypelnienie tymczasowej tablicy elementami przed danym indexem
+            for(int i = 0; i < index; i++) {
+                temp[i] = tab[i];
+            }
+
+            // wypelnienie tymczasowej tablicy elementami po danym indexie
+            // size + 1, bo wczesniej pomniejszono o 1, a tu jeszcze potrzebujemy tego elementu
+            for(int i = index; i < size ; i++) {
+                temp[i] = tab[i + 1];
+            }
+        }
+
+        // wskaznik tablicy wskazuje teraz na nowa tablice
+        tab = new int[size];
+        tab = temp;
+    } else {
+        cout << "Brak elementow do usuniecia";
     }
-
-    // usuwanie ostatniego elementu - wypelnienie tymczasowej tablicy elementami z indexem 0 do size - 2
-    if(index == size) {
-        for(int i = 0; i < index; i++) {
-            temp[i] = tab[i];
-        }
-    }
-
-    // pozostale przypadki
-    if(index > 0 && index < size) {
-        // wypelnienie tymczasowej tablicy elementami przed danym indexem
-        for(int i = 0; i < index; i++) {
-            temp[i] = tab[i];
-        }
-
-        // wypelnienie tymczasowej tablicy elementami po danym indexie
-        // size + 1, bo wczesniej pomniejszono o 1, a tu jeszcze potrzebujemy tego elementu
-        for(int i = index; i < size ; i++) {
-            temp[i] = tab[i + 1];
-        }
-    }
-
-    // wskaznik tablicy wskazuje teraz na nowa tablice
-    tab = new int[size];
-    tab = temp;
 }
 
 void Table::deleteFromTableStart() {
@@ -157,7 +161,14 @@ void Table::deleteFromTableEnd() {
 
 
 void Table::deleteFromTableRandom() {
-    int index = rand() % size;
+    int index;
+
+    if(size > 0) {
+        index = rand() % size;
+    } else {
+        cout << "Brak elementow do usuniecia";
+    }
+
     deleteFromTable(index);
 }
 

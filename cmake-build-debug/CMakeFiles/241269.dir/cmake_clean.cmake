@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/241269.dir/Menu.cpp.o"
   "CMakeFiles/241269.dir/List.cpp.o"
   "CMakeFiles/241269.dir/Heap.cpp.o"
+  "CMakeFiles/241269.dir/Test.cpp.o"
   "241269.pdb"
   "241269"
 )

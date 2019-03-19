@@ -1,5 +1,7 @@
 #include "Menu.h"
+#include "Test.h"
 
+Test test;
 
 void Menu::displayMenu(string info)
 {
@@ -135,8 +137,8 @@ void Menu::menu_table()
                 myTab.display();
                 break;
 
-            case 'r': //TODO tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
-                // można sobie tu dodać własne case'y
+            case 'r':  // funkcja do eksperymentow
+                test.menu_table();
                 break;
         }
 

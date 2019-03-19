@@ -6,21 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/szymon/Git/Data-Structures-and-Computational-Complexity/Heap.cpp
-Heap.h
-/home/szymon/Git/Data-Structures-and-Computational-Complexity/Heap.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.cpp
+Table.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.h
 
-/home/szymon/Git/Data-Structures-and-Computational-Complexity/Heap.h
-string
--
-iostream
--
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.h
 cstdlib
 -
 fstream
 -
-iomanip
+string
 -
-cmath
+iostream
 -
 
