@@ -24,6 +24,8 @@ void Test::menu_table() {
     char opt;
     string fileName;
     int index, value;
+    int sum = 0, average = 0;
+    const int n = 1000;
 
     do {
         displayMenu("--- TESTOWANIE TABLICY ---");
@@ -31,80 +33,145 @@ void Test::menu_table() {
         cout << endl;
         if (opt == '1') {
             //tutaj usuwanie elemenu z tablicy na poczatku
-            auto beginning = std::chrono::steady_clock::now();
-            myTab.deleteFromTableStart();
-            auto end = std::chrono::steady_clock::now();
-            auto time = end - beginning;
+
+            myTab.generateTable(n);
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myTab.deleteFromTableStart();
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
             myTab.display();
-            cout << "Pomiar zajal " << time.count() << " ms." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
         }
 
         else if (opt == '2') {
             //tutaj usuwanie elemenu z tablicy na koncu
-            auto beginning = std::chrono::steady_clock::now();
-            myTab.deleteFromTableEnd();
-            auto end = std::chrono::steady_clock::now();
-            auto time = end - beginning;
+
+            myTab.generateTable(n);
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myTab.deleteFromTableEnd();
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
             myTab.display();
-            cout << "Pomiar zajal " << time.count() << " ms." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
         }
 
         else if(opt == '3') {
             //tutaj usuwanie elemenu z tablicy w losowym miejscu
-            auto beginning = std::chrono::steady_clock::now();
-            myTab.deleteFromTableRandom();
-            auto end = std::chrono::steady_clock::now();
-            auto time = end - beginning;
+
+            myTab.generateTable(n);
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myTab.deleteFromTableRandom();
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
             myTab.display();
-            cout << "Pomiar zajal " << time.count() << " ms." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
         }
 
         else if (opt == '4') {
             //tutaj dodawanie pierwszego elemetu do tablicy
+
             cout << " podaj wartosc:";
             cin >> value;
-            auto beginning = std::chrono::steady_clock::now();
-            myTab.addValueStart(value);
-            auto end = std::chrono::steady_clock::now();
-            auto time = end - beginning;
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myTab.addValueStart(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
             myTab.display();
-            cout << "Pomiar zajal " << time.count() << " ms." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
         }
 
         else if (opt == '5') {
             //tutaj dodawanie ostatniego elemetu do tablicy
             cout << " podaj wartosc:";
             cin >> value;
-            auto beginning = std::chrono::steady_clock::now();
-            myTab.addValueEnd(value);
-            auto end = std::chrono::steady_clock::now();
-            auto time = end - beginning;
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myTab.addValueEnd(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
             myTab.display();
-            cout << "Pomiar zajal " << time.count() << " ms." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
         }
 
         else if (opt == '6') {
             //tutaj dodawanie losowego elemetu do tablicy
+
             cout << " podaj wartosc:";
             cin >> value;
-            auto beginning = std::chrono::steady_clock::now();
-            myTab.addValueRandom(value);
-            auto end = std::chrono::steady_clock::now();
-            auto time = end - beginning;
+
+            for(int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myTab.addValueRandom(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
             myTab.display();
-            cout << "Pomiar zajal " << time.count() << " ms." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
         }
 
         else if (opt == '7') {
             //tutaj generowanie  tablicy
+
             cout << "Podaj ilosc elementow tablicy:";
             cin >> value;
-            auto beginning = std::chrono::steady_clock::now();
-            myTab.generateTable(value);
-            auto end = std::chrono::steady_clock::now();
-            auto time = end - beginning;
+
+            for( int i = 0; i < n; i++) {
+                auto beginning = std::chrono::steady_clock::now();
+                myTab.generateTable(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
             myTab.display();
-            cout << "Pomiar zajal " << time.count() << " ms." << endl;
+            cout << "Pomiar zajal srednio " << average << " ms dla " << n << " razy wykonanej operacji." << endl;
         }
     } while (opt != '0');
 }

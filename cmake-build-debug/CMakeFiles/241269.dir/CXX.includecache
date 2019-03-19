@@ -6,9 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.cpp
-Table.h
-/home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Heap.h
+string
+-
+iostream
+-
+cstdlib
+-
+fstream
+-
+iomanip
+-
+cmath
+-
+
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/List.h
+string
+-
+iostream
+-
+cstdlib
+-
+fstream
+-
 
 /home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.h
 cstdlib
@@ -19,4 +39,22 @@ string
 -
 iostream
 -
+
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Test.cpp
+Test.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Test.h
+
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Test.h
+string
+-
+iostream
+-
+chrono
+-
+Table.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.h
+List.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/List.h
+Heap.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/Heap.h
 
