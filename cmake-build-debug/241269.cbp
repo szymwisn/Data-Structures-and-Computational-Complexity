@@ -8,119 +8,115 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug"/>
+				<Option working_dir="F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug"/>
+				<Option working_dir="F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="241269">
-				<Option output="/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/241269" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug"/>
+				<Option output="F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/241269.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
-					<Add directory="/usr/include/c++/8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 241269"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 241269"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="241269/fast">
-				<Option output="/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/241269" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug"/>
+				<Option output="F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/241269.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
-					<Add directory="/usr/include/c++/8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 241269/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 241269/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug"/>
+				<Option working_dir="F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/Heap.cpp">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/Heap.cpp">
 			<Option target="241269"/>
 		</Unit>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/Heap.h">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/Heap.h">
 			<Option target="241269"/>
 		</Unit>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/List.cpp">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/List.cpp">
 			<Option target="241269"/>
 		</Unit>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/List.h">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/List.h">
 			<Option target="241269"/>
 		</Unit>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/Menu.cpp">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/Menu.cpp">
 			<Option target="241269"/>
 		</Unit>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/Menu.h">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/Menu.h">
 			<Option target="241269"/>
 		</Unit>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.cpp">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/Table.cpp">
 			<Option target="241269"/>
 		</Unit>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.h">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/Table.h">
 			<Option target="241269"/>
 		</Unit>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/Test.cpp">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/Test.cpp">
 			<Option target="241269"/>
 		</Unit>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/Test.h">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/Test.h">
 			<Option target="241269"/>
 		</Unit>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/main.cpp">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/main.cpp">
 			<Option target="241269"/>
 		</Unit>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/main.h">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/main.h">
 			<Option target="241269"/>
 		</Unit>
-		<Unit filename="/home/szymon/Git/Data-Structures-and-Computational-Complexity/CMakeLists.txt">
+		<Unit filename="F:/Dev/Git/Data-Structures-and-Computational-Complexity/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

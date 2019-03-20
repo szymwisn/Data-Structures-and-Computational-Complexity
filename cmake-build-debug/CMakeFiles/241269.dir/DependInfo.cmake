@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/szymon/Git/Data-Structures-and-Computational-Complexity/Heap.cpp" "/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/CMakeFiles/241269.dir/Heap.cpp.o"
-  "/home/szymon/Git/Data-Structures-and-Computational-Complexity/List.cpp" "/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/CMakeFiles/241269.dir/List.cpp.o"
-  "/home/szymon/Git/Data-Structures-and-Computational-Complexity/Menu.cpp" "/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/CMakeFiles/241269.dir/Menu.cpp.o"
-  "/home/szymon/Git/Data-Structures-and-Computational-Complexity/Table.cpp" "/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/CMakeFiles/241269.dir/Table.cpp.o"
-  "/home/szymon/Git/Data-Structures-and-Computational-Complexity/Test.cpp" "/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/CMakeFiles/241269.dir/Test.cpp.o"
-  "/home/szymon/Git/Data-Structures-and-Computational-Complexity/main.cpp" "/home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/CMakeFiles/241269.dir/main.cpp.o"
+  "F:/Dev/Git/Data-Structures-and-Computational-Complexity/Heap.cpp" "F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/CMakeFiles/241269.dir/Heap.cpp.obj"
+  "F:/Dev/Git/Data-Structures-and-Computational-Complexity/List.cpp" "F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/CMakeFiles/241269.dir/List.cpp.obj"
+  "F:/Dev/Git/Data-Structures-and-Computational-Complexity/Menu.cpp" "F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/CMakeFiles/241269.dir/Menu.cpp.obj"
+  "F:/Dev/Git/Data-Structures-and-Computational-Complexity/Table.cpp" "F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/CMakeFiles/241269.dir/Table.cpp.obj"
+  "F:/Dev/Git/Data-Structures-and-Computational-Complexity/Test.cpp" "F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/CMakeFiles/241269.dir/Test.cpp.obj"
+  "F:/Dev/Git/Data-Structures-and-Computational-Complexity/main.cpp" "F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/CMakeFiles/241269.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

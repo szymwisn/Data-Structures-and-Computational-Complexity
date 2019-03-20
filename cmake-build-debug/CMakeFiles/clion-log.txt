@@ -1,4 +1,4 @@
-/snap/clion/61/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/szymon/Git/Data-Structures-and-Computational-Complexity
+"F:\Apps\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" F:\Dev\Git\Data-Structures-and-Computational-Complexity
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/szymon/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug
+-- Build files have been written to: F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug
