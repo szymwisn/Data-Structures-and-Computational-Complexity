@@ -41,15 +41,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Table.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="644">
@@ -85,8 +76,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="430" column="25" lean-forward="true" selection-start-line="430" selection-start-column="25" selection-end-line="430" selection-end-column="25" />
+            <state relative-caret-position="253">
+              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Table.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2239">
+              <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
             </state>
           </provider>
         </entry>
@@ -94,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Heap.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4523">
-              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="46">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -149,10 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>10</find>
-      <find>rand</find>
-      <find>head</find>
-      <find>siz</find>
       <find>cout</find>
       <find>getc</find>
       <find>getch</find>
@@ -177,13 +173,21 @@
       <find>cout &lt;&lt; &quot;Pomiar zajal srednio &quot; &lt;&lt; average &lt;&lt; &quot; ms ( &quot; &lt;&lt; n &lt;&lt; &quot; razy wykonano operacje).&quot; &lt;&lt; endl;</find>
       <find>W tym kopcu nie moze byc wiecej elementow niz 31!</find>
       <find>31</find>
-      <find>for(int i = 0; i &lt; n; i++) {</find>
       <find>nie ma podane</find>
+      <find>for(int i = 0; i &lt; n; i++) {</find>
+      <find>average = sum / n;</find>
+      <find>cout &lt;&lt; &quot;Pomiar zajal srednio &quot; &lt;&lt; average &lt;&lt; &quot; ms (&quot; &lt;&lt; n &lt;&lt; &quot; razy wykonano operacje).&quot; &lt;&lt; endl;</find>
+      <find>myTab.generateTable(1000);</find>
+      <find>myList.generateList(1000);</find>
     </findStrings>
     <replaceStrings>
       <replace>cout &lt;&lt; &quot;Pomiar zajal srednio &quot; &lt;&lt; average &lt;&lt; &quot; ms ( &quot; &lt;&lt; n &lt;&lt; &quot; razy wykonano operacje).&quot; &lt;&lt; endl;</replace>
       <replace>cout &lt;&lt; &quot;Pomiar zajal srednio &quot; &lt;&lt; average &lt;&lt; &quot; ms (&quot; &lt;&lt; n &lt;&lt; &quot; razy wykonano operacje).&quot; &lt;&lt; endl;</replace>
       <replace>for(int i = 0; i &lt; tests; i++) {</replace>
+      <replace>average = sum / tests;</replace>
+      <replace>cout &lt;&lt; &quot;Pomiar zajal srednio &quot; &lt;&lt; average &lt;&lt; &quot; ms (&quot; &lt;&lt; tests &lt;&lt; &quot; razy wykonano operacje dla &quot; &lt;&lt; elements &lt;&lt; &quot; elementow).&quot; &lt;&lt; endl;</replace>
+      <replace>myTab.generateTable(elements);</replace>
+      <replace>myList.generateList(elements);</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -303,11 +307,12 @@
       <workItem from="1553162226292" duration="23000" />
       <workItem from="1553162365099" duration="22000" />
       <workItem from="1553169868781" duration="543000" />
+      <workItem from="1553170538644" duration="1281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116352000" />
+    <option name="totallyTimeSpent" value="117633000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -322,7 +327,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.15298508" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.15458423" />
       <window_info id="Structure" order="1" sideWeight="0.5044543" side_tool="true" weight="0.26535088" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -360,13 +365,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Table.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3634">
-          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Menu.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -391,6 +389,13 @@
           <folding>
             <element signature="e#55#73#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6877">
+          <caret line="299" column="9" selection-start-line="299" selection-start-column="9" selection-end-line="299" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -441,24 +446,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Heap.cpp">
+    <entry file="file://$PROJECT_DIR$/Table.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4523">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="2239">
+          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/List.cpp">
+    <entry file="file://$PROJECT_DIR$/Heap.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6877">
-          <caret line="299" column="9" selection-start-line="299" selection-start-column="9" selection-end-line="299" selection-end-column="9" />
+        <state relative-caret-position="46">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="430" column="25" lean-forward="true" selection-start-line="430" selection-start-column="25" selection-end-line="430" selection-end-column="25" />
+        <state relative-caret-position="253">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
         </state>
       </provider>
     </entry>

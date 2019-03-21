@@ -1,6 +1,6 @@
 #include "Heap.h"
 
-const int randomVal = 1000;
+const int randomVal = 10000;
 
 
 Heap::Heap() {
