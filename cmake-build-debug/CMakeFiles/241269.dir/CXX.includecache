@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Heap.cpp
-Heap.h
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Heap.h
-
 F:/Dev/Git/Data-Structures-and-Computational-Complexity/Heap.h
 string
 -
@@ -24,10 +20,6 @@ iomanip
 cmath
 -
 
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/List.cpp
-List.h
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/List.h
-
 F:/Dev/Git/Data-Structures-and-Computational-Complexity/List.h
 string
 -
@@ -37,28 +29,6 @@ cstdlib
 -
 fstream
 -
-
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Menu.cpp
-Menu.h
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Menu.h
-Test.h
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Test.h
-
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Menu.h
-string
--
-iostream
--
-Table.h
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Table.h
-List.h
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/List.h
-Heap.h
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Heap.h
-
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Table.cpp
-Table.h
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Table.h
 
 F:/Dev/Git/Data-Structures-and-Computational-Complexity/Table.h
 cstdlib
@@ -87,8 +57,4 @@ List.h
 F:/Dev/Git/Data-Structures-and-Computational-Complexity/List.h
 Heap.h
 F:/Dev/Git/Data-Structures-and-Computational-Complexity/Heap.h
-
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/main.cpp
-Menu.h
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Menu.h
 

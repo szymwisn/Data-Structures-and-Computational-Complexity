@@ -294,9 +294,9 @@ void List::deleteFromListRandom() {
 
         if(found) {
             deleteFromList(value);
-            cout << "Usunieto element o wartosci: " << value << endl;
+//            cout << "Usunieto element o wartosci: " << value << endl;
         } else {
-            cout << "Nie znaleziono elementu o wylosowanej wartosci - " << value << "." << endl;
+//            cout << "Nie znaleziono elementu o wylosowanej wartosci - " << value << "." << endl;
         }
     } else {
         cout << "Brak elementow do usuniecia. " << endl;

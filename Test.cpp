@@ -3,13 +3,14 @@
 void Test::displayMenu(string info) {
     cout << endl;
     cout << info << endl;
-    cout << "1. Usun na poczatku" << endl;
-    cout << "2. Usun na koncu" << endl;
-    cout << "3. Usun w losowym miejscu" << endl;
-    cout << "4. Dodaj na poczatku" << endl;
-    cout << "5. Dodaj na koncu" << endl;
-    cout << "6. Dodaj w losowym miejscu" << endl;
-    cout << "7. Utworz losowo" << endl;
+    cout << "1. Znajdz" << endl;
+    cout << "2. Usun na poczatku" << endl;
+    cout << "3. Usun na koncu" << endl;
+    cout << "4. Usun w losowym miejscu" << endl;
+    cout << "5. Dodaj na poczatku" << endl;
+    cout << "6. Dodaj na koncu" << endl;
+    cout << "7. Dodaj w losowym miejscu" << endl;
+    cout << "8. Utworz losowo" << endl;
     cout << "0. Powrot do menu" << endl;
     cout << "Podaj opcje:";
 }
@@ -17,9 +18,10 @@ void Test::displayMenu(string info) {
 void Test::displayMenuHeap(string info) {
     cout << endl;
     cout << info << endl;
-    cout << "1. Usun w wybranym miejscu (na potrzeby testu wybrane = losowe)" << endl;
-    cout << "2. Dodaj" << endl;
-    cout << "3. Utworz losowo" << endl;
+    cout << "1. Znajdz" << endl;
+    cout << "2. Usun w wybranym miejscu (na potrzeby testu wybrane = losowe)" << endl;
+    cout << "3. Dodaj" << endl;
+    cout << "4. Utworz losowo" << endl;
     cout << "0. Powrot do menu" << endl;
     cout << "Podaj opcje:";
 }
@@ -47,6 +49,26 @@ void Test::menu_table() {
             myTab.generateTable(n);
 
             for(int i = 0; i < n; i++) {
+                value = rand() % 10000;
+                auto beginning = std::chrono::steady_clock::now();
+                myTab.IsValueInTable(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+
+        if (opt == '2') {
+            //tutaj usuwanie elemenu z tablicy na poczatku
+
+            myTab.generateTable(n);
+
+            for(int i = 0; i < n; i++) {
                 auto beginning = std::chrono::steady_clock::now();
                 myTab.deleteFromTableStart();
                 auto end = std::chrono::steady_clock::now();
@@ -60,7 +82,7 @@ void Test::menu_table() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if (opt == '2') {
+        else if (opt == '3') {
             //tutaj usuwanie elemenu z tablicy na koncu
 
             myTab.generateTable(n);
@@ -79,7 +101,7 @@ void Test::menu_table() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if(opt == '3') {
+        else if(opt == '4') {
             //tutaj usuwanie elemenu z tablicy w losowym miejscu
 
             myTab.generateTable(n);
@@ -98,7 +120,7 @@ void Test::menu_table() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if (opt == '4') {
+        else if (opt == '5') {
             //tutaj dodawanie pierwszego elemetu do tablicy
 
             myTab.generateTable(0);
@@ -120,7 +142,7 @@ void Test::menu_table() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if (opt == '5') {
+        else if (opt == '6') {
             //tutaj dodawanie ostatniego elemetu do tablicy
 
             myTab.generateTable(0);
@@ -142,7 +164,7 @@ void Test::menu_table() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if (opt == '6') {
+        else if (opt == '7') {
             //tutaj dodawanie losowego elemetu do tablicy
 
             myTab.generateTable(0);
@@ -164,7 +186,7 @@ void Test::menu_table() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if (opt == '7') {
+        else if (opt == '8') {
             //tutaj generowanie  tablicy
 
             cout << "Podaj ilosc elementow tablicy:";
@@ -204,6 +226,26 @@ void Test::menu_list() {
         cin >> n;
 
         if (opt == '1') {
+            //tutaj usuwanie elemenu z tablicy na poczatku
+
+            myList.generateList(n);
+
+            for(int i = 0; i < n; i++) {
+                value = rand() % 10000;
+                auto beginning = std::chrono::steady_clock::now();
+                myList.IsValueInList(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+
+        if (opt == '2') {
             //tutaj usuwanie elemenu z listy na poczatku
 
             myList.generateList(n);
@@ -222,7 +264,7 @@ void Test::menu_list() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if (opt == '2') {
+        else if (opt == '3') {
             //tutaj usuwanie elemenu na koncu
 
             myList.generateList(n);
@@ -241,7 +283,7 @@ void Test::menu_list() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if(opt == '3') {
+        else if(opt == '4') {
             //tutaj usuwanie elemenu w losowym miejscu
 
             myList.generateList(n);
@@ -260,7 +302,7 @@ void Test::menu_list() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if (opt == '4') {
+        else if (opt == '5') {
             //tutaj dodawanie pierwszego elemetu
 
             myList.clearList();
@@ -282,7 +324,7 @@ void Test::menu_list() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if (opt == '5') {
+        else if (opt == '6') {
             //tutaj dodawanie ostatniego elemetu
 
             myList.clearList();
@@ -304,7 +346,7 @@ void Test::menu_list() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if (opt == '6') {
+        else if (opt == '7') {
             //tutaj dodawanie losowego elemetu
 
             myList.clearList();
@@ -326,7 +368,7 @@ void Test::menu_list() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if (opt == '7') {
+        else if (opt == '8') {
             //tutaj generowanie listy
 
             cout << "Podaj ilosc elementow tablicy:";
@@ -365,7 +407,28 @@ void Test::menu_heap() {
         cout << "Ile razy wykonac test?";
         cin >> n;
 
+
         if (opt == '1') {
+            //tutaj usuwanie elemenu z tablicy na poczatku
+
+            myHeap.generateHeap(n);
+
+            for(int i = 0; i < n; i++) {
+                value = rand() % 10000;
+                auto beginning = std::chrono::steady_clock::now();
+                myHeap.IsValueInHeap(value);
+                auto end = std::chrono::steady_clock::now();
+                auto time = end - beginning;
+                sum += time.count();
+            }
+
+            average = sum / n;
+            sum = 0;
+
+            cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
+        }
+
+        if (opt == '2') {
             //tutaj usuwanie elemenu z kopca
 
             myHeap.generateHeap(n);
@@ -385,7 +448,7 @@ void Test::menu_heap() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if (opt == '2') {
+        else if (opt == '3') {
             //tutaj dodawanie elementu
 
             myHeap.clearHeap();
@@ -407,7 +470,7 @@ void Test::menu_heap() {
             cout << "Pomiar zajal srednio " << average << " ms (" << n << " razy wykonano operacje)." << endl;
         }
 
-        else if(opt == '3') {
+        else if(opt == '4') {
             //tutaj tworzenie kopca z losowymi wartosciami
 
             cout << "Podaj ilosc elementow kopca:";

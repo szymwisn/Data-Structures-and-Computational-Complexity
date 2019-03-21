@@ -5,7 +5,7 @@ const int randomVal = 1000;
 
 Heap::Heap() {
     size = 0;
-    max_size = 10000;
+    max_size = 30000;
     arr = new int[max_size];
 }
 
@@ -140,9 +140,9 @@ void Heap::deleteFromHeap(int value) {
             // przywrocenie wlasnosci kopca
             heapifyDown(position);
 
-            cout << endl << "Usunieto wartosc - " << value << endl;
+//            cout << endl << "Usunieto wartosc - " << value << endl;
         } else {
-            cout << endl << "W tym kopcu nie ma podanego elementu! - " << value << endl;
+//            cout << endl << "W tym kopcu nie ma podanego elementu! - " << value << endl;
         }
     } else {
         cout << endl << "W kopcu nie ma zadnych elementow." << endl;
