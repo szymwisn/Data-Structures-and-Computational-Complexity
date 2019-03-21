@@ -1,4 +1,4 @@
-# Install script for directory: F:/Dev/Git/Data-Structures-and-Computational-Complexity
+# Install script for directory: F:/Dev/Git/Data-Structures-and-Computational-Complexity/CODE
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "F:/Dev/Git/Data-Structures-and-Computational-Complexity/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "F:/Dev/Git/Data-Structures-and-Computational-Complexity/CODE/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

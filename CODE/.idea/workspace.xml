@@ -55,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/List.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="299">
+              <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -76,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
+            <state relative-caret-position="498">
               <caret line="428" selection-start-line="428" selection-end-line="428" />
             </state>
           </provider>
@@ -85,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Table.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="185" selection-start-line="185" selection-end-line="185" />
+            <state relative-caret-position="437">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -94,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Heap.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1395">
-              <caret line="145" column="9" lean-forward="true" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
+            <state relative-caret-position="3335">
+              <caret line="145" column="9" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -105,9 +105,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="713">
               <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="43" />
-              <folding>
-                <element signature="e#53#69#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -124,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Menu.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6302">
+            <state relative-caret-position="6279">
               <caret line="274" selection-start-line="274" selection-end-line="276" selection-end-column="45" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
@@ -138,9 +135,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#53#69#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -191,7 +185,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -205,43 +199,34 @@
         <option value="$PROJECT_DIR$/Heap.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Test.h" />
-        <option value="$PROJECT_DIR$/Table.cpp" />
         <option value="$PROJECT_DIR$/Menu.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Test.cpp" />
         <option value="$PROJECT_DIR$/Heap.cpp" />
+        <option value="$PROJECT_DIR$/Table.cpp" />
         <option value="$PROJECT_DIR$/List.cpp" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="241269" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Data-Structures-and-Computational-Complexity" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/User Files/Szymon/Desktop/sdizo-master/part_1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -311,11 +296,12 @@
       <workItem from="1553172132203" duration="229000" />
       <workItem from="1553181384729" duration="1449000" />
       <workItem from="1553186815586" duration="697000" />
+      <workItem from="1553191873731" duration="353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120008000" />
+    <option name="totallyTimeSpent" value="120361000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -330,12 +316,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.15938166" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.1609808" />
       <window_info id="Structure" order="1" sideWeight="0.5044543" side_tool="true" weight="0.26535088" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3288889" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32552955" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32552955" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -405,13 +391,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Heap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3335">
+          <caret line="145" column="9" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Heap.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
           <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="43" />
-          <folding>
-            <element signature="e#53#69#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -424,7 +414,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Menu.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6302">
+        <state relative-caret-position="6279">
           <caret line="274" selection-start-line="274" selection-end-line="276" selection-end-column="45" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
@@ -436,37 +426,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#53#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Heap.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1395">
-          <caret line="145" column="9" lean-forward="true" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
+        <state relative-caret-position="498">
           <caret line="428" selection-start-line="428" selection-end-line="428" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Table.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="185" selection-start-line="185" selection-end-line="185" />
+        <state relative-caret-position="437">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/List.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="299">
+          <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
         </state>
       </provider>
     </entry>

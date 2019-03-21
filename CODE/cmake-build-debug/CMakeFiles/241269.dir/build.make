@@ -42,10 +42,10 @@ RM = "F:\Apps\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = F:\Dev\Git\Data-Structures-and-Computational-Complexity
+CMAKE_SOURCE_DIR = F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = F:\Dev\Git\Data-Structures-and-Computational-Complexity\cmake-build-debug
+CMAKE_BINARY_DIR = F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/241269.dir/depend.make
@@ -58,81 +58,81 @@ include CMakeFiles/241269.dir/flags.make
 
 CMakeFiles/241269.dir/main.cpp.obj: CMakeFiles/241269.dir/flags.make
 CMakeFiles/241269.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/241269.dir/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\241269.dir\main.cpp.obj -c F:\Dev\Git\Data-Structures-and-Computational-Complexity\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/241269.dir/main.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\241269.dir\main.cpp.obj -c F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\main.cpp
 
 CMakeFiles/241269.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/241269.dir/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Dev\Git\Data-Structures-and-Computational-Complexity\main.cpp > CMakeFiles\241269.dir\main.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\main.cpp > CMakeFiles\241269.dir\main.cpp.i
 
 CMakeFiles/241269.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/241269.dir/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Dev\Git\Data-Structures-and-Computational-Complexity\main.cpp -o CMakeFiles\241269.dir\main.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\main.cpp -o CMakeFiles\241269.dir\main.cpp.s
 
 CMakeFiles/241269.dir/Table.cpp.obj: CMakeFiles/241269.dir/flags.make
 CMakeFiles/241269.dir/Table.cpp.obj: ../Table.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/241269.dir/Table.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\241269.dir\Table.cpp.obj -c F:\Dev\Git\Data-Structures-and-Computational-Complexity\Table.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/241269.dir/Table.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\241269.dir\Table.cpp.obj -c F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\Table.cpp
 
 CMakeFiles/241269.dir/Table.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/241269.dir/Table.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Dev\Git\Data-Structures-and-Computational-Complexity\Table.cpp > CMakeFiles\241269.dir\Table.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\Table.cpp > CMakeFiles\241269.dir\Table.cpp.i
 
 CMakeFiles/241269.dir/Table.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/241269.dir/Table.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Dev\Git\Data-Structures-and-Computational-Complexity\Table.cpp -o CMakeFiles\241269.dir\Table.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\Table.cpp -o CMakeFiles\241269.dir\Table.cpp.s
 
 CMakeFiles/241269.dir/Menu.cpp.obj: CMakeFiles/241269.dir/flags.make
 CMakeFiles/241269.dir/Menu.cpp.obj: ../Menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/241269.dir/Menu.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\241269.dir\Menu.cpp.obj -c F:\Dev\Git\Data-Structures-and-Computational-Complexity\Menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/241269.dir/Menu.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\241269.dir\Menu.cpp.obj -c F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\Menu.cpp
 
 CMakeFiles/241269.dir/Menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/241269.dir/Menu.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Dev\Git\Data-Structures-and-Computational-Complexity\Menu.cpp > CMakeFiles\241269.dir\Menu.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\Menu.cpp > CMakeFiles\241269.dir\Menu.cpp.i
 
 CMakeFiles/241269.dir/Menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/241269.dir/Menu.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Dev\Git\Data-Structures-and-Computational-Complexity\Menu.cpp -o CMakeFiles\241269.dir\Menu.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\Menu.cpp -o CMakeFiles\241269.dir\Menu.cpp.s
 
 CMakeFiles/241269.dir/List.cpp.obj: CMakeFiles/241269.dir/flags.make
 CMakeFiles/241269.dir/List.cpp.obj: ../List.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/241269.dir/List.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\241269.dir\List.cpp.obj -c F:\Dev\Git\Data-Structures-and-Computational-Complexity\List.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/241269.dir/List.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\241269.dir\List.cpp.obj -c F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\List.cpp
 
 CMakeFiles/241269.dir/List.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/241269.dir/List.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Dev\Git\Data-Structures-and-Computational-Complexity\List.cpp > CMakeFiles\241269.dir\List.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\List.cpp > CMakeFiles\241269.dir\List.cpp.i
 
 CMakeFiles/241269.dir/List.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/241269.dir/List.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Dev\Git\Data-Structures-and-Computational-Complexity\List.cpp -o CMakeFiles\241269.dir\List.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\List.cpp -o CMakeFiles\241269.dir\List.cpp.s
 
 CMakeFiles/241269.dir/Heap.cpp.obj: CMakeFiles/241269.dir/flags.make
 CMakeFiles/241269.dir/Heap.cpp.obj: ../Heap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/241269.dir/Heap.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\241269.dir\Heap.cpp.obj -c F:\Dev\Git\Data-Structures-and-Computational-Complexity\Heap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/241269.dir/Heap.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\241269.dir\Heap.cpp.obj -c F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\Heap.cpp
 
 CMakeFiles/241269.dir/Heap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/241269.dir/Heap.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Dev\Git\Data-Structures-and-Computational-Complexity\Heap.cpp > CMakeFiles\241269.dir\Heap.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\Heap.cpp > CMakeFiles\241269.dir\Heap.cpp.i
 
 CMakeFiles/241269.dir/Heap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/241269.dir/Heap.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Dev\Git\Data-Structures-and-Computational-Complexity\Heap.cpp -o CMakeFiles\241269.dir\Heap.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\Heap.cpp -o CMakeFiles\241269.dir\Heap.cpp.s
 
 CMakeFiles/241269.dir/Test.cpp.obj: CMakeFiles/241269.dir/flags.make
 CMakeFiles/241269.dir/Test.cpp.obj: ../Test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/241269.dir/Test.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\241269.dir\Test.cpp.obj -c F:\Dev\Git\Data-Structures-and-Computational-Complexity\Test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/241269.dir/Test.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\241269.dir\Test.cpp.obj -c F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\Test.cpp
 
 CMakeFiles/241269.dir/Test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/241269.dir/Test.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Dev\Git\Data-Structures-and-Computational-Complexity\Test.cpp > CMakeFiles\241269.dir\Test.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\Test.cpp > CMakeFiles\241269.dir\Test.cpp.i
 
 CMakeFiles/241269.dir/Test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/241269.dir/Test.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Dev\Git\Data-Structures-and-Computational-Complexity\Test.cpp -o CMakeFiles\241269.dir\Test.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\Test.cpp -o CMakeFiles\241269.dir\Test.cpp.s
 
 # Object files for target 241269
 241269_OBJECTS = \
@@ -156,7 +156,7 @@ CMakeFiles/241269.dir/Test.cpp.s: cmake_force
 241269.exe: CMakeFiles/241269.dir/linklibs.rsp
 241269.exe: CMakeFiles/241269.dir/objects1.rsp
 241269.exe: CMakeFiles/241269.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable 241269.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable 241269.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\241269.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +169,6 @@ CMakeFiles/241269.dir/clean:
 .PHONY : CMakeFiles/241269.dir/clean
 
 CMakeFiles/241269.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" F:\Dev\Git\Data-Structures-and-Computational-Complexity F:\Dev\Git\Data-Structures-and-Computational-Complexity F:\Dev\Git\Data-Structures-and-Computational-Complexity\cmake-build-debug F:\Dev\Git\Data-Structures-and-Computational-Complexity\cmake-build-debug F:\Dev\Git\Data-Structures-and-Computational-Complexity\cmake-build-debug\CMakeFiles\241269.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\cmake-build-debug F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\cmake-build-debug F:\Dev\Git\Data-Structures-and-Computational-Complexity\CODE\cmake-build-debug\CMakeFiles\241269.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/241269.dir/depend
 

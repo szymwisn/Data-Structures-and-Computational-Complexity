@@ -139,6 +139,8 @@ void List::addValue(int index, int value) {
         node->previous = prevNode;
 
         // ostateczny efekt:  NULL <= ... <=> prevNode <=> node <=> nextNode <=> ... => NULL
+    } else {
+        cout << "Ideks poza zakresem. " << endl;
     }
 
     // zwiekszenie rozmiaru listy

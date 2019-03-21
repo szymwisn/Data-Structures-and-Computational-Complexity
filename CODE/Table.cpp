@@ -106,7 +106,7 @@ void Table::addValueRandom(int value) {
 
 
 void Table::deleteFromTable(int index) {
-    if(size > 0) {
+    if(size > 0 && index < size) {
         // zmniejszenie rozmiaru tablicy
         size--;
 
@@ -146,7 +146,7 @@ void Table::deleteFromTable(int index) {
         tab = new int[size];
         tab = temp;
     } else {
-        cout << "Brak elementow do usuniecia";
+        cout << "Brak elementow do usuniecia lub indeks wykracza poza zakres.";
     }
 }
 

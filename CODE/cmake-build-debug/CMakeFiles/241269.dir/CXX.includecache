@@ -6,29 +6,11 @@
 
 #IncludeRegexTransform: 
 
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Heap.cpp
-Heap.h
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Heap.h
-
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/Heap.h
-string
--
-iostream
--
-cstdlib
--
-fstream
--
-iomanip
--
-cmath
--
-
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/List.cpp
+F:/Dev/Git/Data-Structures-and-Computational-Complexity/CODE/List.cpp
 List.h
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/List.h
+F:/Dev/Git/Data-Structures-and-Computational-Complexity/CODE/List.h
 
-F:/Dev/Git/Data-Structures-and-Computational-Complexity/List.h
+F:/Dev/Git/Data-Structures-and-Computational-Complexity/CODE/List.h
 string
 -
 iostream
@@ -36,5 +18,19 @@ iostream
 cstdlib
 -
 fstream
+-
+
+F:/Dev/Git/Data-Structures-and-Computational-Complexity/CODE/Table.cpp
+Table.h
+F:/Dev/Git/Data-Structures-and-Computational-Complexity/CODE/Table.h
+
+F:/Dev/Git/Data-Structures-and-Computational-Complexity/CODE/Table.h
+cstdlib
+-
+fstream
+-
+string
+-
+iostream
 -
 
