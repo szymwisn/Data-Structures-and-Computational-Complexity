@@ -55,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/List.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
+            <state relative-caret-position="1725">
+              <caret line="141" column="12" lean-forward="true" selection-start-line="141" selection-start-column="12" selection-end-line="141" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -296,12 +296,12 @@
       <workItem from="1553172132203" duration="229000" />
       <workItem from="1553181384729" duration="1449000" />
       <workItem from="1553186815586" duration="697000" />
-      <workItem from="1553191873731" duration="353000" />
+      <workItem from="1553191873731" duration="762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120361000" />
+    <option name="totallyTimeSpent" value="120770000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -314,14 +314,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.1609808" />
       <window_info id="Structure" order="1" sideWeight="0.5044543" side_tool="true" weight="0.26535088" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3288889" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32552955" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7001115" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -445,8 +444,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/List.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
+        <state relative-caret-position="1725">
+          <caret line="141" column="12" lean-forward="true" selection-start-line="141" selection-start-column="12" selection-end-line="141" selection-end-column="12" />
         </state>
       </provider>
     </entry>
