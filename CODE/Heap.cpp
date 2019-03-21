@@ -5,7 +5,7 @@ const int randomVal = 10000;
 
 Heap::Heap() {
     size = 0;
-    max_size = 30000;
+    max_size = 100000;
     arr = new int[max_size];
 }
 
@@ -142,7 +142,7 @@ void Heap::deleteFromHeap(int value) {
 
 //            cout << endl << "Usunieto wartosc - " << value << endl;
         } else {
-//            cout << endl << "W tym kopcu nie ma podanego elementu! - " << value << endl;
+            cout << endl << "W tym kopcu nie ma podanego elementu! - " << value << endl;
         }
     } else {
         cout << endl << "W kopcu nie ma zadnych elementow." << endl;
