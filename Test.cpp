@@ -48,9 +48,8 @@ void Test::menu_table() {
         if (opt == '1') {
             //tutaj znajdowanie
 
-            myTab.generateTable(elements);
-
             for(int i = 0; i < tests; i++) {
+                myTab.generateTable(elements);
                 value = rand() % 10000;
                 auto beginning = std::chrono::steady_clock::now();
                 myTab.IsValueInTable(value);
@@ -68,9 +67,8 @@ void Test::menu_table() {
         if (opt == '2') {
             //tutaj usuwanie elemenu z tablicy na poczatku
 
-            myTab.generateTable(elements);
-
             for(int i = 0; i < tests; i++) {
+                myTab.generateTable(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myTab.deleteFromTableStart();
                 auto end = std::chrono::steady_clock::now();
@@ -87,9 +85,8 @@ void Test::menu_table() {
         else if (opt == '3') {
             //tutaj usuwanie elemenu z tablicy na koncu
 
-            myTab.generateTable(elements);
-
             for(int i = 0; i < tests; i++) {
+                myTab.generateTable(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myTab.deleteFromTableEnd();
                 auto end = std::chrono::steady_clock::now();
@@ -106,9 +103,8 @@ void Test::menu_table() {
         else if(opt == '4') {
             //tutaj usuwanie elemenu z tablicy w losowym miejscu
 
-            myTab.generateTable(elements);
-
             for(int i = 0; i < tests; i++) {
+                myTab.generateTable(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myTab.deleteFromTableRandom();
                 auto end = std::chrono::steady_clock::now();
@@ -125,9 +121,8 @@ void Test::menu_table() {
         else if (opt == '5') {
             //tutaj dodawanie pierwszego elemetu do tablicy
 
-            myTab.generateTable(elements);
-
             for(int i = 0; i < tests; i++) {
+                myTab.generateTable(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myTab.addValueStart(1);
                 auto end = std::chrono::steady_clock::now();
@@ -144,9 +139,8 @@ void Test::menu_table() {
         else if (opt == '6') {
             //tutaj dodawanie ostatniego elemetu do tablicy
 
-            myTab.generateTable(elements);
-
             for(int i = 0; i < tests; i++) {
+                myTab.generateTable(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myTab.addValueEnd(1);
                 auto end = std::chrono::steady_clock::now();
@@ -163,10 +157,8 @@ void Test::menu_table() {
         else if (opt == '7') {
             //tutaj dodawanie losowego elemetu do tablicy
 
-            myTab.generateTable(elements);
-
-
             for(int i = 0; i < tests; i++) {
+                myTab.generateTable(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myTab.addValueRandom(rand() % 10000);
                 auto end = std::chrono::steady_clock::now();
@@ -219,9 +211,8 @@ void Test::menu_list() {
         if (opt == '1') {
             //tutaj znajdowanie
 
-            myList.generateList(elements);
-
             for(int i = 0; i < tests; i++) {
+                myList.generateList(elements);
                 value = rand() % 10000;
                 auto beginning = std::chrono::steady_clock::now();
                 myList.IsValueInList(value);
@@ -239,9 +230,8 @@ void Test::menu_list() {
         if (opt == '2') {
             //tutaj usuwanie elemenu z listy na poczatku
 
-            myList.generateList(elements);
-
             for(int i = 0; i < tests; i++) {
+                myList.generateList(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myList.deleteFromListStart();
                 auto end = std::chrono::steady_clock::now();
@@ -258,9 +248,8 @@ void Test::menu_list() {
         else if (opt == '3') {
             //tutaj usuwanie elemenu na koncu
 
-            myList.generateList(elements);
-
             for(int i = 0; i < tests; i++) {
+                myList.generateList(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myList.deleteFromListEnd();
                 auto end = std::chrono::steady_clock::now();
@@ -277,9 +266,8 @@ void Test::menu_list() {
         else if(opt == '4') {
             //tutaj usuwanie elemenu w losowym miejscu
 
-            myList.generateList(elements);
-
             for(int i = 0; i < tests; i++) {
+                myList.generateList(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myList.deleteFromListRandom();
                 auto end = std::chrono::steady_clock::now();
@@ -296,9 +284,8 @@ void Test::menu_list() {
         else if (opt == '5') {
             //tutaj dodawanie pierwszego elemetu
 
-            myList.generateList(elements);
-
             for(int i = 0; i < tests; i++) {
+                myList.generateList(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myList.addValueStart(1);
                 auto end = std::chrono::steady_clock::now();
@@ -315,9 +302,8 @@ void Test::menu_list() {
         else if (opt == '6') {
             //tutaj dodawanie ostatniego elemetu
 
-            myList.generateList(elements);
-
             for(int i = 0; i < tests; i++) {
+                myList.generateList(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myList.addValueEnd(1);
                 auto end = std::chrono::steady_clock::now();
@@ -334,9 +320,8 @@ void Test::menu_list() {
         else if (opt == '7') {
             //tutaj dodawanie losowego elemetu
 
-            myList.generateList(elements);
-
             for(int i = 0; i < tests; i++) {
+                myList.generateList(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myList.addValueRandom(1);
                 auto end = std::chrono::steady_clock::now();
@@ -389,9 +374,8 @@ void Test::menu_heap() {
         if (opt == '1') {
             //tutaj znajdowanie elementu
 
-            myHeap.generateHeap(elements);
-
             for(int i = 0; i < tests; i++) {
+                myHeap.generateHeap(elements);
                 value = rand() % 10000;
                 auto beginning = std::chrono::steady_clock::now();
                 myHeap.IsValueInHeap(value);
@@ -409,9 +393,8 @@ void Test::menu_heap() {
         if (opt == '2') {
             //tutaj usuwanie elemenu z kopca
 
-            myHeap.generateHeap(elements);
-
             for(int i = 0; i < tests; i++) {
+                myHeap.generateHeap(elements);
                 value = rand() % 10000;
                 auto beginning = std::chrono::steady_clock::now();
                 myHeap.deleteFromHeap(value);
@@ -429,9 +412,8 @@ void Test::menu_heap() {
         else if (opt == '3') {
             //tutaj dodawanie elementu
 
-            myHeap.generateHeap(elements);
-
             for(int i = 0; i < tests; i++) {
+                myHeap.generateHeap(elements);
                 auto beginning = std::chrono::steady_clock::now();
                 myHeap.addValue(1);
                 auto end = std::chrono::steady_clock::now();
