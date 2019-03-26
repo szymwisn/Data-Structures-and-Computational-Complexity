@@ -138,6 +138,7 @@ void Heap::deleteFromHeap(int value) {
             size--;
 
             // przywrocenie wlasnosci kopca
+            heapifyUp(position);
             heapifyDown(position);
 
 //            cout << endl << "Usunieto wartosc - " << value << endl;
