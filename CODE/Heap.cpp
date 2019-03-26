@@ -202,7 +202,7 @@ void Heap::display() {
 
         cout << "Iterpretacja w formie tablicy (wyswietlaja sie wszystkie elementy): " << endl;
         for(int i = 0; i < size; i++) {
-            cout << "[" << i << "] " << arr[i] << " ";
+            cout << arr[i] << " ";
         }
 
         cout << endl;

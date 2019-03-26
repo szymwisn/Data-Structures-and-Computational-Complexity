@@ -32,7 +32,7 @@ int List::loadFromFile(string FileName) {
 
         // wczytywanie kolejnych wersow z pliku do do listy
         while(getline(file, line)) {
-            addValueStart(stoi(line));
+            addValueEnd(stoi(line));
         }
 
         file.close();
