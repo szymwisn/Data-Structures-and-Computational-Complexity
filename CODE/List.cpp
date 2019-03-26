@@ -173,7 +173,10 @@ void List::addValueRandom(int value) {
 
 
 void List::deleteFromList(int value) {
-    if(size > 0 ) {
+
+    if(size == 1 && head->value == value) {
+        deleteFromListStart();
+    } else if(size > 1 ) {
         Node *node;
 
         // zmniejszenie rozmiaru listy i poinformowanie funkcji, ktore moga pozniej wystapic -
@@ -201,12 +204,12 @@ void List::deleteFromList(int value) {
                 deleteFromListStart();
             }
 
-                // usuniecie z konca listy
+            // usuniecie z konca listy
             else if(node == tail) {
                 deleteFromListEnd();
             }
 
-                // usuniecie z pozostalych miejsc
+            // usuniecie z pozostalych miejsc
             else {
                 Node *prevNode, *nextNode;
 
@@ -245,6 +248,7 @@ void List::deleteFromListStart() {
         if(node == tail) {
             head = NULL;
             tail = NULL;
+            node = NULL;
         } else {
             node = head->next;
             node->previous = NULL;
@@ -267,6 +271,7 @@ void List::deleteFromListEnd() {
         if(node == head) {
             head = NULL;
             tail = NULL;
+            node = NULL;
         } else {
             node = tail->previous;
             node->next = NULL;

@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/szymon/Git/Data-Structures-and-Computational-Complexity/CODE/Heap.cpp
-Heap.h
-/home/szymon/Git/Data-Structures-and-Computational-Complexity/CODE/Heap.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/CODE/List.cpp
+List.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/CODE/List.h
 
-/home/szymon/Git/Data-Structures-and-Computational-Complexity/CODE/Heap.h
+/home/szymon/Git/Data-Structures-and-Computational-Complexity/CODE/List.h
 string
 -
 iostream
@@ -18,9 +18,5 @@ iostream
 cstdlib
 -
 fstream
--
-iomanip
--
-cmath
 -
 
